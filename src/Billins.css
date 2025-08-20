@@ -1,0 +1,164 @@
+:root {
+  --primary-blue: #2c5aa0;
+  --light-blue: #e8f4fd;
+  --accent-green: #17bc85;
+  --text-dark: #333;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--light-blue) 0%, #f8f9fa 100%);
+  padding: 80px 0;
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.stats-label {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.btn-primary-custom {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.btn-primary-custom:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+.section-title {
+  color: var(--primary-blue);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-list i {
+  color: var(--accent-green);
+  margin-right: 10px;
+}
+
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+  background-color: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #15a876;
+}
+
+/* Added new styles for comprehensive sections */
+.services-banner {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 60px 0;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.specialty-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.specialty-item:hover {
+  transform: translateY(-2px);
+}
+
+.expertise-sidebar {
+  background: #e74c3c;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.star-rating {
+  color: #ffc107;
+}
