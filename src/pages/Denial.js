@@ -6,7 +6,7 @@ const Denial = () => {
       <section className="hero-section">
         <div className="container">
           <div className="row align-items-center mt-5">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h2 className=" mb-3" style={{ color: "rgb(4, 158, 187)" }}>
                 Turn Denied Claims Into Recovered Revenue
               </h2>
@@ -41,7 +41,7 @@ const Denial = () => {
                 Get a Free Revenue Analysis
               </button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div className="row">
                 <div className="col-md-6">
                   <div
@@ -101,7 +101,7 @@ const Denial = () => {
       >
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h2 className="section-title text-white">
                 Why Choose Us For Denial Management
               </h2>
@@ -126,7 +126,7 @@ const Denial = () => {
                 Consult with Denial Experts
               </button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
                 alt="Denial Management Services"
                 className="img-fluid rounded"
@@ -137,7 +137,7 @@ const Denial = () => {
         </div>
       </section>
       <section className="py-5">
-        <div className="container">
+        <div className="container" data-aos="fade-down" data-aos-delay="200">
           <div className="text-center mb-5">
             <h4 className="section-title">
               Denial Management Services That Actually Work
@@ -228,7 +228,7 @@ const Denial = () => {
       <section className="py-5 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h3 className="section-title">
                 Benefits of Our Denial Management Services
               </h3>
@@ -298,7 +298,7 @@ const Denial = () => {
                 Consult with Denial Experts
               </button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <img
                 alt="Denial Management"
                 className="img-fluid rounded"
@@ -311,7 +311,11 @@ const Denial = () => {
       <section className="py-5">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8">
+            <div
+              className="col-lg-8"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <h3 className="section-title">
                 How We Make a Difference with Our Denial Management Services
                 Across U.S
@@ -359,7 +363,7 @@ const Denial = () => {
       <section className="contact-section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8">
+            <div className="col-lg-8  " data-aos="fade-up" data-aos-delay="100">
               <div className="form-container">
                 <h3 className="text-center mb-3">Send Us a Message</h3>
                 <p className="text-center mb-4">

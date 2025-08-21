@@ -8,11 +8,20 @@ const EHRPage = () => {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container mb-5" style={{ marginTop: "100px" }}>
       {/* Hero Section */}
-      <div className="row align-items-center mb-5">
-        <div className="col-12 col-lg-6">
-          <h2 className="text-primary">Electronic Health Records</h2>
+      <div
+        className="row align-items-center mb-5"
+        style={{ marginTop: "50px" }}
+      >
+        <div
+          className="col-12 col-lg-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h2 className="" style={{ color: "rgb(4, 158, 187)" }}>
+            Electronic Health Records
+          </h2>
           <h1 className="display-4 fw-bold">
             Optimized Financial and Clinical Performance with Our Advanced EHR
           </h1>
@@ -24,7 +33,7 @@ const EHRPage = () => {
           </p>
           <div className="d-flex gap-3">
             <a
-              href="https://carecloud.com/request-a-free-demo/"
+              href="#"
               className="btn  btn-sm"
               style={{
                 backgroundColor: "rgb(4, 158, 187)",
@@ -34,7 +43,7 @@ const EHRPage = () => {
               Schedule a demo <i className="fas fa-angle-right"></i>
             </a>
             <a
-              href="https://carecloud.com/chat/"
+              href="#"
               className="btn  btn-sm"
               style={{
                 border: " 1px solid rgb(4, 158, 187)",
@@ -47,7 +56,11 @@ const EHRPage = () => {
             </a>
           </div>
         </div>
-        <div className="col-12 col-lg-6">
+        <div
+          className="col-12 col-lg-6"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           <img
             src="https://carecloud.com/wp-content/uploads/2025/04/2025_03_intelligent_analytics_1_1x.webp"
             alt="Healthcare Analytics Dashboard"
@@ -64,7 +77,7 @@ const EHRPage = () => {
             Charts-EHR is just part of our All-in-One Solution
           </p>
           <a
-            href="https://carecloud.com/solutions/"
+            href="#"
             className="btn  btn-sm"
             style={{ backgroundColor: "rgb(4, 158, 187)", color: "white" }}
           >
@@ -249,7 +262,7 @@ const EHRPage = () => {
           <h3>Streamline Your Practice with CareCloud</h3>
           <div className="d-flex justify-content-center gap-3 mt-3">
             <a
-              href="https://carecloud.com/request-a-free-demo/"
+              href="#"
               className="btn  btn-sm"
               style={{
                 backgroundColor: "rgb(4, 158, 187)",
@@ -259,7 +272,7 @@ const EHRPage = () => {
               Book Your Demo <i className="fas fa-angle-right"></i>
             </a>
             <a
-              href="https://carecloud.com/chat/"
+              href="#"
               className="btn  btn-sm"
               style={{
                 border: "1px solid rgb(4, 158, 187)",

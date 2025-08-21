@@ -5,10 +5,13 @@ const FrontDesk = () => {
   return (
     <>
       {/* Hero Section with Image */}
-      <section className="py-5 bg-white">
-        <div className="container">
+      <section className="py-5 bg-white" style={{ marginTop: "60px" }}>
+        <div
+          className="container"
+          style={{ paddingLeft: "5%", paddingRight: "5%" }}
+        >
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h3 className=" mb-3 mt-5" style={{ color: "rgb(4, 158, 187)" }}>
                 FrontDesk Assist
               </h3>
@@ -23,7 +26,7 @@ const FrontDesk = () => {
               </p>
               <div className="d-flex gap-3">
                 <a
-                  href="https://www2.carecloud.com/schedule-demo"
+                  href="#"
                   className="btn  btn-sm d-flex align-items-center gap-2"
                   style={{
                     backgroundColor: "rgb(4, 158, 187)",
@@ -44,7 +47,7 @@ const FrontDesk = () => {
                   Get a demo
                 </a>
                 <a
-                  href="https://www2.carecloud.com/chat"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn  btn-sm d-flex align-items-center gap-2"
@@ -68,7 +71,11 @@ const FrontDesk = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-6 mt-4 mt-lg-0">
+            <div
+              className="col-lg-6 mt-4 mt-lg-0 "
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/front-desk-banner-new-1.webp"
                 alt="A front desk healthcare receptionist assisting a lady holding her child"
@@ -85,7 +92,7 @@ const FrontDesk = () => {
       <section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h4 className="" style={{ color: "rgb(4, 158, 187)" }}>
                 CareCloud All-in-one
               </h4>
@@ -115,8 +122,8 @@ const FrontDesk = () => {
                 Explore All-In-One
               </NavLink>
             </div>
-            <div className="col-lg-6">
-              <ul className="list-unstyled">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
+              <ul className="list-unstyled row">
                 {[
                   "Practice Management",
                   "Electronic Health Records",
@@ -129,22 +136,24 @@ const FrontDesk = () => {
                   "Remote Patient Monitoring",
                   "Telehealth",
                 ].map((item, index) => (
-                  <li key={index} className="d-flex align-items-center mb-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      className="me-2"
-                    >
-                      <path
-                        d="M6.78741 10L12.7388 3.75C12.8578 3.625 12.8578 3.5 12.7388 3.375L12.2627 2.875C12.1436 2.75 12.0246 2.75 11.9056 2.875L5.59714 9.5C5.47811 9.625 5.24005 9.625 5.12103 9.5L2.3834 6.625C2.26437 6.5 2.14534 6.5 2.02632 6.625L1.55021 7.125C1.43118 7.25 1.43118 7.375 1.55021 7.5L3.93075 10L5.12103 11.25C5.24005 11.375 5.47811 11.375 5.59714 11.25L6.78741 10Z"
-                        fill="rgb(4, 158, 187)"
-                      />
-                    </svg>
-                    {item}
-                  </li>
+                  <div className="col-md-6 mb-2" key={index}>
+                    <li key={index} className="d-flex align-items-center mb-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        className="me-2"
+                      >
+                        <path
+                          d="M6.78741 10L12.7388 3.75C12.8578 3.625 12.8578 3.5 12.7388 3.375L12.2627 2.875C12.1436 2.75 12.0246 2.75 11.9056 2.875L5.59714 9.5C5.47811 9.625 5.24005 9.625 5.12103 9.5L2.3834 6.625C2.26437 6.5 2.14534 6.5 2.02632 6.625L1.55021 7.125C1.43118 7.25 1.43118 7.375 1.55021 7.5L3.93075 10L5.12103 11.25C5.24005 11.375 5.47811 11.375 5.59714 11.25L6.78741 10Z"
+                          fill="rgb(4, 158, 187)"
+                        />
+                      </svg>
+                      {item}
+                    </li>
+                  </div>
                 ))}
               </ul>
               {/* Placeholder for potential image */}
@@ -169,7 +178,11 @@ const FrontDesk = () => {
           </p>
           <div className="row g-4">
             <div className="col-md-4">
-              <div className="card h-100">
+              <div
+                className="card h-100"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div className="card-body text-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +214,11 @@ const FrontDesk = () => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card h-100">
+              <div
+                className="card h-100"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
                 <div className="card-body text-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +265,11 @@ const FrontDesk = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div className="card h-100">
                 <div className="card-body text-center">
                   <svg
@@ -327,7 +348,11 @@ const FrontDesk = () => {
       <section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 order-lg-2">
+            <div
+              className="col-lg-6 order-lg-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/practice-02.webp"
                 alt="A healthcare professional in scrubs working on a computer"
@@ -336,7 +361,7 @@ const FrontDesk = () => {
                 height="420"
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <h4 className="" style={{ color: "rgb(4, 158, 187)" }}>
                 Integration
               </h4>
@@ -359,7 +384,7 @@ const FrontDesk = () => {
       <section className="py-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h4 style={{ color: "rgb(4, 158, 187)" }}>
                 Comprehensive and customizable
               </h4>
@@ -372,7 +397,11 @@ const FrontDesk = () => {
                 deliver a better front-office experience.
               </p>
             </div>
-            <div className="col-lg-6 mt-4 mt-lg-0">
+            <div
+              className="col-lg-6 mt-4 mt-lg-0"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/banner-frontdesk02.webp"
                 alt="A front desk healthcare receptionist assisting a lady"
@@ -389,7 +418,7 @@ const FrontDesk = () => {
       <section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/front-desk-3-banner-size.webp"
                 alt="A front desk healthcare receptionist assisting a mother holding her child"
@@ -398,7 +427,7 @@ const FrontDesk = () => {
                 height="420"
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <h4 className="" style={{ color: "rgb(4, 158, 187)" }}>
                 Proven Results
               </h4>
@@ -442,17 +471,17 @@ const FrontDesk = () => {
       <section className="py-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h3 className="mb-4">Ready to level up your front office?</h3>
               <p>
                 Contact us today to see how CareCloud FrontDesk Assist can
                 simplify your operations and elevate the patient journey.
               </p>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <div className="d-flex gap-3 flex-wrap">
                 <a
-                  href="https://www2.carecloud.com/schedule-demo"
+                  href="#"
                   className="btn  btn-sm d-flex align-items-center gap-2"
                   style={{
                     backgroundColor: "rgb(4, 158, 187)",
@@ -473,7 +502,7 @@ const FrontDesk = () => {
                   Schedule a demo
                 </a>
                 <a
-                  href="https://www2.carecloud.com/chat"
+                  href="#"
                   className="btn btn-outline-primary btn-sm d-flex align-items-center gap-2"
                   style={{
                     border: "1px solid rgb(4, 158, 187)",
@@ -551,7 +580,7 @@ const FrontDesk = () => {
                     Discover how our platform can transform your workflow.
                   </p>
                   <a
-                    href="https://carecloud.com/request-a-free-demo/"
+                    href="#"
                     className="btn  btn-sm d-flex align-items-center gap-2 justify-content-center"
                     style={{
                       backgroundColor: "rgb(4, 158, 187)",
@@ -582,7 +611,7 @@ const FrontDesk = () => {
                     Our experts are ready to assist you in real-time.
                   </p>
                   <a
-                    href="https://carecloud.com/chat/"
+                    href="#"
                     className="btn  btn-sm d-flex align-items-center gap-2 justify-content-center"
                     style={{
                       backgroundColor: "rgb(4, 158, 187)",

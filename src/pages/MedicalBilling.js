@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect, useRef } from "react";
 import "../Billins.css";
 
 const MedicalBillingPage = () => {
@@ -12,6 +13,25 @@ const MedicalBillingPage = () => {
     message: "",
   });
 
+  const swiperRef = useRef(null);
+
+  // Initialize Swiper when the component mounts
+  useEffect(() => {
+    if (swiperRef.current && typeof window.Swiper !== "undefined") {
+      new window.Swiper(swiperRef.current, {
+        slidesPerView: 1,
+        loop: true,
+        speed: 600,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    }
+  }, []);
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -31,7 +51,7 @@ const MedicalBillingPage = () => {
       <section className=" text-white py-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <p className="text-light mb-2">
                 Reliable, Transparent, and Scalable Billing for Modern Practices
               </p>
@@ -73,7 +93,7 @@ const MedicalBillingPage = () => {
                 Consult with Denial Experts
               </button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
                 src="https://prombs.com/wp-content/uploads/2024/11/slide2-11.webp"
                 alt="Medical Team Collaboration"
@@ -88,7 +108,7 @@ const MedicalBillingPage = () => {
       <section className="bg-info text-white py-5">
         <div className="container">
           <div className="row mb-5">
-            <div className="col-12">
+            <div className="col-12" data-aos="fade-right" data-aos-delay="100">
               <div className="row text-center">
                 <div className="col-md-3 mb-3">
                   <div className="d-flex align-items-center justify-content-center">
@@ -119,7 +139,7 @@ const MedicalBillingPage = () => {
           </div>
 
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-8" data-aos="fade-up" data-aos-delay="100">
               <div className="bg-white text-dark p-4 rounded">
                 <div className="row text-center">
                   <div className="col-md-3 mb-4">
@@ -145,7 +165,7 @@ const MedicalBillingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4" data-aos="fade-down" data-aos-delay="100">
               <div className="text-center">
                 <p className="lead">
                   Thousands of providers growing their practice with PROMBS.
@@ -161,7 +181,7 @@ const MedicalBillingPage = () => {
       <section className="py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
               <h2 className="text-primary mb-4">
                 Why Choose Us For Denial Management
               </h2>
@@ -183,7 +203,7 @@ const MedicalBillingPage = () => {
                 Consult with Denial Experts
               </button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <h2 className="text-primary mb-4">
                 Denial Management Services That Actually Work
               </h2>
@@ -216,14 +236,14 @@ const MedicalBillingPage = () => {
       <section className="bg-light py-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
                 src="https://prombs.com/wp-content/uploads/2025/05/passion.webp"
                 alt="Medical billing team"
                 className="img-fluid rounded"
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <p className="text-primary mb-2">
                 Reliable, Transparent, and Scalable Billing for Modern Practices
               </p>
@@ -267,7 +287,7 @@ const MedicalBillingPage = () => {
       <section className="py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h2 className="text-primary mb-4">
                 How We Simplify Medical Billing and Coding From Start to Finish
               </h2>
@@ -288,7 +308,7 @@ const MedicalBillingPage = () => {
               </p>
               <button className="btn btn-danger">Let's Get Started</button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <div className="text-center">
                 <img
                   src="https://prombs.com/wp-content/uploads/2025/05/outsouce-1024x887.webp"
@@ -305,14 +325,14 @@ const MedicalBillingPage = () => {
       <section className="bg-light py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
                 src="http://prombs.com/wp-content/uploads/2024/10/Why-Pro-Medical-Billing-Solutions11.webp"
                 alt="Medical billing specialists"
                 className="img-fluid rounded"
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <h2 className="text-primary mb-4">
                 Let a Medical Billing Specialist Handle the Process for You
               </h2>
@@ -408,7 +428,7 @@ const MedicalBillingPage = () => {
       <section className="py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-8" data-aos="fade-down" data-aos-delay="100">
               <h2 className="text-primary mb-4">
                 What Sets Our Medical Billing and Coding Services Apart
               </h2>
@@ -470,7 +490,7 @@ const MedicalBillingPage = () => {
               </div>
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div
                 className="card  text-white"
                 style={{ backgroundColor: "rgb(4, 158, 187)" }}
@@ -580,7 +600,7 @@ const MedicalBillingPage = () => {
       <section className="bg-light py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-8" data-aos="fade-up" data-aos-delay="100">
               <h2 className="text-primary mb-4">
                 Billing and Coding Services for Every Specialty and Practice
                 Size
@@ -667,7 +687,11 @@ const MedicalBillingPage = () => {
               </div>
             </div>
 
-            <div className="col-lg-4">
+            <div
+              className="col-lg-4"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div className="card bg-danger text-white">
                 <div className="card-header">
                   <h5 className="card-title mb-0">Our Expertise</h5>
@@ -700,115 +724,413 @@ const MedicalBillingPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-5">
-        <div className="container">
-          <h2 className="text-center text-primary mb-5">
-            Our Esteemed Clients' Testimonials
-          </h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card h-100">
-                <div className="card-body">
-                  <p className="card-text">
-                    "We have been using Pro Medical Billing Solutions for
-                    several years, and we have been extremely satisfied with
-                    their services. They have helped us to optimize our billing
-                    and coding practices, resulting in improved cash flow for
-                    our practice."
-                  </p>
-                  <div className="d-flex align-items-center mt-3">
-                    <img
-                      src="https://static.vecteezy.com/system/resources/previews/038/962/461/non_2x/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg"
-                      alt="Marissa Vazquez"
-                      className="rounded-circle me-3"
-                      width="50"
-                      height="50"
-                    />
-                    <div>
-                      <h6 className="mb-0 text-danger">
-                        Presence Therapy (Nevada)
-                      </h6>
-                      <small className="text-muted">
-                        Marissa Vazquez | Office Manager
-                      </small>
+      <div class="page-title">
+        <div class="title-wrapper">
+          <h1>Our Estmeed Clients</h1>
+        </div>
+      </div>
+
+      <section
+        id="featured-testimonials"
+        class="featured-testimonials section light-background"
+      >
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonials-slider swiper init-swiper" ref={swiperRef}>
+            {/* <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script> */}
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Sed ut perspiciatis unde omnis</h2>
+                      <p>
+                        Proin iaculis purus consequat sem cure digni ssim donec
+                        porttitora entum suscipit rhoncus. Accusantium quam,
+                        ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                        risus at semper.
+                      </p>
+                      <p>
+                        Beatae magnam dolore quia ipsum. Voluptatem totam et qui
+                        dolore dignissimos. Amet quia sapiente laudantium nihil
+                        illo et assumenda sit cupiditate. Nam perspiciatis
+                        perferendis minus consequatur. Enim ut eos quo.
+                      </p>
+                      <div class="profile d-flex align-items-center">
+                        <img
+                          src="assets/img/person/person-m-7.webp"
+                          class="profile-img"
+                          alt=""
+                        />
+                        <div class="profile-info">
+                          <h3>Saul Goodman</h3>
+                          <span>Client</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img
+                          src="assets/img/person/person-m-7.webp"
+                          class="featured-img"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="text-warning mt-2">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Nemo enim ipsam voluptatem</h2>
+                      <p>
+                        Export tempor illum tamen malis malis eram quae irure
+                        esse labore quem cillum quid cillum eram malis quorum
+                        velit fore eram velit sunt aliqua noster fugiat irure
+                        amet legam anim culpa.
+                      </p>
+                      <p>
+                        Dolorem excepturi esse qui amet maxime quibusdam aut
+                        repellendus voluptatum. Corrupti enim a repellat cumque
+                        est laborum fuga consequuntur. Dolorem nostrum deleniti
+                        quas voluptatem iure dolorum rerum. Repudiandae
+                        doloribus ut repellat harum vero aut. Modi aut velit
+                        aperiam aspernatur odit ut vitae.
+                      </p>
+                      <div class="profile d-flex align-items-center">
+                        <img
+                          src="assets/img/person/person-f-8.webp"
+                          class="profile-img"
+                          alt=""
+                        />
+                        <div class="profile-info">
+                          <h3>Sara Wilsson</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img
+                          src="assets/img/person/person-f-8.webp"
+                          class="featured-img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Labore nostrum eos impedit</h2>
+                      <p>
+                        Fugiat enim eram quae cillum dolore dolor amet nulla
+                        culpa multos export minim fugiat minim velit minim dolor
+                        enim duis veniam ipsum anim magna sunt elit fore quem
+                        dolore labore illum veniam.
+                      </p>
+                      <p>
+                        Itaque ut explicabo vero occaecati est quam rerum sed.
+                        Numquam tempora aut aut quaerat quia illum. Nobis quia
+                        autem odit ipsam numquam. Doloribus sit sint corporis
+                        eius totam fuga. Hic nostrum suscipit corrupti nam
+                        expedita adipisci aut optio.
+                      </p>
+                      <div class="profile d-flex align-items-center">
+                        <img
+                          src="assets/img/person/person-m-9.webp"
+                          class="profile-img"
+                          alt=""
+                        />
+                        <div class="profile-info">
+                          <h3>Matt Brandon</h3>
+                          <span>Freelancer</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img
+                          src="assets/img/person/person-m-9.webp"
+                          class="featured-img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Impedit dolor facilis nulla</h2>
+                      <p>
+                        Enim nisi quem export duis labore cillum quae magna enim
+                        sint quorum nulla quem veniam duis minim tempor labore
+                        quem eram duis noster aute amet eram fore quis sint
+                        minim.
+                      </p>
+                      <p>
+                        Omnis aspernatur accusantium qui delectus praesentium
+                        repellendus. Facilis sint odio aspernatur voluptas
+                        commodi qui qui qui pariatur. Corrupti deleniti itaque
+                        quaerat ipsum deleniti culpa tempora tempore. Et
+                        consequatur exercitationem hic aspernatur nobis est
+                        voluptatibus architecto laborum.
+                      </p>
+                      <div class="profile d-flex align-items-center">
+                        <img
+                          src="assets/img/person/person-f-10.webp"
+                          class="profile-img"
+                          alt=""
+                        />
+                        <div class="profile-info">
+                          <h3>Jena Karlis</h3>
+                          <span>Store Owner</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img
+                          src="assets/img/person/person-f-10.webp"
+                          class="featured-img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4">
-              <div className="card h-100">
-                <div className="card-body">
-                  <p className="card-text">
-                    "Pro MBS has provided excellent satisfaction for our Medical
-                    Billing and Coding operations. We conduct regular meetings
-                    with their team. They are updated with current industry
-                    trends and keep very high standards."
-                  </p>
-                  <div className="d-flex align-items-center mt-3">
+            <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="testimonials section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  posuere metus vitae arcu imperdiet, id aliquet ante
+                  scelerisque. Sed sit amet sem vitae urna fringilla tempus.
+                </p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-author">
                     <img
-                      src="https://static.vecteezy.com/system/resources/previews/038/962/461/non_2x/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg"
-                      alt="Huiping Xu"
-                      className="rounded-circle me-3"
-                      width="50"
-                      height="50"
+                      src="assets/img/person/person-m-3.webp"
+                      alt="Author"
+                      class="img-fluid rounded-circle"
+                      loading="lazy"
                     />
                     <div>
-                      <h6 className="mb-0 text-danger">
-                        Whole Health Professional PLLC (Texas)
-                      </h6>
-                      <small className="text-muted">Huiping Xu | MD</small>
+                      <h5>Michael Anderson</h5>
+                      <span>Software Developer</span>
                     </div>
                   </div>
-                  <div className="text-warning mt-2">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="col-md-4">
-              <div className="card h-100">
-                <div className="card-body">
-                  <p className="card-text">
-                    "Pro Medical billing Solutions has numerous strengths. One
-                    of mine is effective communication and has kept me aware of
-                    billing updates and claim processes. I am impressed with the
-                    swift claim processing."
-                  </p>
-                  <div className="d-flex align-items-center mt-3">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Cras fermentum odio eu feugiat lide par naso tierra. Justo
+                  eget nada terra videa magna derita valies darta donna mare
+                  fermentum iaculis eu non diam phasellus.
+                </p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-author">
                     <img
-                      src="https://static.vecteezy.com/system/resources/previews/038/962/461/non_2x/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg"
-                      alt="Sandra Diaz"
-                      className="rounded-circle me-3"
-                      width="50"
-                      height="50"
+                      src="assets/img/person/person-f-5.webp"
+                      alt="Author"
+                      class="img-fluid rounded-circle"
+                      loading="lazy"
                     />
                     <div>
-                      <h6 className="mb-0 text-danger">
-                        South Main Clinic (Texas)
-                      </h6>
-                      <small className="text-muted">Sandra Diaz | CEO</small>
+                      <h5>Sophia Martinez</h5>
+                      <span>Marketing Specialist</span>
                     </div>
                   </div>
-                  <div className="text-warning mt-2">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                  augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                  Etiam rhoncus. Maecenas tempus, tellus eget condimentum.
+                </p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-author">
+                    <img
+                      src="assets/img/person/person-m-7.webp"
+                      alt="Author"
+                      class="img-fluid rounded-circle"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h5>David Wilson</h5>
+                      <span>Graphic Designer</span>
+                    </div>
+                  </div>
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend
+                  tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                  eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+                  quis.
+                </p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-author">
+                    <img
+                      src="assets/img/person/person-f-9.webp"
+                      alt="Author"
+                      class="img-fluid rounded-circle"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h5>Emily Johnson</h5>
+                      <span>UX Designer</span>
+                    </div>
+                  </div>
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Praesent nonummy mi in odio. Nullam accumsan lorem in dui.
+                  Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum
+                  ante ipsum primis in faucibus orci luctus et ultrices.
+                </p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-author">
+                    <img
+                      src="assets/img/person/person-f-11.webp"
+                      alt="Author"
+                      class="img-fluid rounded-circle"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h5>Olivia Thompson</h5>
+                      <span>Entrepreneur</span>
+                    </div>
+                  </div>
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                  arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                  justo. Nullam dictum felis eu pede mollis pretium.
+                </p>
+                <div class="testimonial-footer">
+                  <div class="testimonial-author">
+                    <img
+                      src="assets/img/person/person-m-12.webp"
+                      alt="Author"
+                      class="img-fluid rounded-circle"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h5>James Taylor</h5>
+                      <span>Financial Analyst</span>
+                    </div>
+                  </div>
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
                   </div>
                 </div>
               </div>
@@ -818,7 +1140,11 @@ const MedicalBillingPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-light py-5">
+      <section
+        className="bg-light py-5"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div className="container">
           <h2 className="text-center text-primary mb-5">
             Frequently Asked Questions
@@ -940,7 +1266,7 @@ const MedicalBillingPage = () => {
       <section className="bg-primary text-white py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-8" data-aos="fade-up" data-aos-delay="100">
               <h2 className="mb-4" style={{ color: "white" }}>
                 What Sets Our Medical Billing and Coding Services Apart
               </h2>
@@ -963,7 +1289,11 @@ const MedicalBillingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 text-center">
+            <div
+              className="col-lg-4 text-center"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               <div className="bg-white text-dark p-4 rounded">
                 <i className="bi bi-heart-pulse text-primary display-4 mb-3"></i>
                 <h5 className="text-primary">

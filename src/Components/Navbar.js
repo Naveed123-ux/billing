@@ -13,6 +13,26 @@ const Navbar = () => {
     if (mobileNavToggleBtn) {
       mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
     }
+    document
+      .querySelectorAll(".navmenu .toggle-dropdown")
+      .forEach((navmenu) => {
+        navmenu.addEventListener("click", function (e) {
+          e.preventDefault();
+          this.parentNode.classList.toggle("active");
+          this.parentNode.nextElementSibling.classList.toggle(
+            "dropdown-active"
+          );
+
+          e.stopImmediatePropagation();
+        });
+      });
+    document.querySelectorAll("#navmenu a").forEach((navmenu) => {
+      navmenu.addEventListener("click", () => {
+        if (document.querySelector(".mobile-nav-active")) {
+          mobileNavToogle();
+        }
+      });
+    });
   }, []);
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
@@ -205,7 +225,7 @@ const Navbar = () => {
                     Revenue Cycle
                   </NavLink>
                 </li>
-                <li className="dropdown">
+                {/* <li className="dropdown">
                   <a href="#">
                     <span>Deep Dropdown</span>{" "}
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
@@ -227,7 +247,7 @@ const Navbar = () => {
                       <NavLink to="#">Deep Dropdown 5</NavLink>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <NavLink to="/ehr">Electronic health records</NavLink>
                 </li>

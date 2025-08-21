@@ -25,17 +25,21 @@ const RevenueCycleManagement = () => {
       </div>
 
       {/* Call to Action Buttons */}
-      <div className="row justify-content-center mb-5">
+      <div
+        className="row justify-content-center mb-5"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
         <div className="col-12 col-md-6 text-center">
           <a
-            href="https://carecloud.com/request-a-free-demo/"
+            href="#"
             className="btn btn-primary btn-lg me-2 mb-2 border-0"
             style={{ backgroundColor: "rgb(4, 158, 187)" }}
           >
             <i className="fas fa-angle-right"></i> Get a demo
           </a>
           <a
-            href="https://carecloud.com/contact-us/"
+            href="#"
             className="btn btn-outline-primary btn-lg mb-2 "
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +54,11 @@ const RevenueCycleManagement = () => {
       </div>
 
       {/* Image Section */}
-      <div className="row justify-content-center mb-5">
+      <div
+        className="row justify-content-center mb-5"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div className="col-12 col-md-8">
           <img
             src="https://carecloud.com/wp-content/uploads/2025/03/banner-rcm.webp"
@@ -61,7 +69,11 @@ const RevenueCycleManagement = () => {
       </div>
 
       {/* All-in-One Solution */}
-      <div className="row justify-content-center text-center mb-5">
+      <div
+        className="row justify-content-center text-center mb-5"
+        data-aos="fade-left"
+        data-aos-delay="100"
+      >
         <div className="col-12">
           <p className="h4">CareCloud All-in-one</p>
           <p className="h5">RCM is just part of our All-in-One Solution</p>
@@ -76,7 +88,11 @@ const RevenueCycleManagement = () => {
       </div>
 
       {/* Feature List */}
-      <div className="row justify-content-center mb-5">
+      <div
+        className="row justify-content-center mb-5"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div className="col-12 col-md-6">
           <ul className="list-unstyled">
             <li className="mb-2">
@@ -145,11 +161,17 @@ const RevenueCycleManagement = () => {
       </div>
 
       {/* Feature Cards */}
-      <div className="row g-4 mb-5">
+      <div className="row g-4 mb-5" data-aos="fade-right" data-aos-delay="200">
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="card h-100">
+          <div
+            className="card h-100"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body text-center">
-              <i className="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+              <i
+                className="fas fa-shield-alt fa-3x  mb-3"
+                style={{ color: "rgb(4, 158, 187)" }}
+              ></i>
               <h4 className="card-title">Denial Prevention Tools</h4>
               <p className="card-text">
                 RCM proactively detects billing errors and coding discrepancies
@@ -161,9 +183,15 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="card h-100">
+          <div
+            className="card h-100 "
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body text-center">
-              <i className="fas fa-check-circle fa-3x text-primary mb-3"></i>
+              <i
+                className="fas fa-check-circle fa-3x  mb-3"
+                style={{ color: "rgb(4, 158, 187)" }}
+              ></i>
               <h4 className="card-title">Prior Authorization Management</h4>
               <p className="card-text">
                 Automates obtaining payer authorizations, minimizing manual
@@ -174,9 +202,15 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="card h-100">
+          <div
+            className="card h-100"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body text-center">
-              <i className="fas fa-chart-line fa-3x text-primary mb-3"></i>
+              <i
+                className="fas fa-chart-line fa-3x t mb-3"
+                style={{ color: "rgb(4, 158, 187)" }}
+              ></i>
               <h4 className="card-title">End-to-End Revenue Management</h4>
               <p className="card-text">
                 Provides support for the complete revenue cycle from patient
@@ -187,9 +221,15 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="card h-100">
+          <div
+            className="card h-100"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body text-center">
-              <i className="fas fa-sync-alt fa-3x text-primary mb-3"></i>
+              <i
+                className="fas fa-sync-alt fa-3x  mb-3"
+                style={{ color: "rgb(4, 158, 187)" }}
+              ></i>
               <h4 className="card-title">Seamless EHR Integration</h4>
               <p className="card-text">
                 Synchronizes clinical and billing data in real-time, reducing
@@ -200,9 +240,15 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="card h-100">
+          <div
+            className="card h-100"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body text-center">
-              <i className="fas fa-dollar-sign fa-3x text-primary mb-3"></i>
+              <i
+                className="fas fa-dollar-sign fa-3x  mb-3"
+                style={{ color: "rgb(4, 158, 187)" }}
+              ></i>
               <h4 className="card-title">Optimized Claim Reimbursement</h4>
               <p className="card-text">
                 RCM estimates claim payment amounts and timelines, enabling
@@ -213,9 +259,15 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="card h-100">
+          <div
+            className="card h-100"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body text-center">
-              <i className="fas fa-gavel fa-3x text-primary mb-3"></i>
+              <i
+                className="fas fa-gavel fa-3x  mb-3"
+                style={{ color: "rgb(4, 158, 187)" }}
+              ></i>
               <h4 className="card-title">Appeals Automation</h4>
               <p className="card-text">
                 RCM streamlines appeal filing, enhancing accuracy, reducing
@@ -239,16 +291,22 @@ const RevenueCycleManagement = () => {
             payments.
           </p>
           <a
-            href="https://carecloud.com/request-a-free-demo/"
-            className="btn btn-primary btn-lg me-2 mb-2"
+            href="#"
+            className="btn  btn-lg me-2 mb-2 border-0"
+            style={{ backgroundColor: "rgb(4, 158, 187)", color: "#fff" }}
           >
             <i className="fas fa-angle-right"></i> Request Assessment
           </a>
           <a
-            href="https://carecloud.com/contact-us/"
-            className="btn btn-outline-primary btn-lg mb-2"
+            href="#"
+            className="btn  btn-lg mb-2"
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              backgroundColor: "#fff",
+              color: "rgb(4, 158, 187)",
+              border: "1px solid rgb(4, 158, 187)",
+            }}
           >
             <i className="fas fa-angle-right"></i> Contact Sales
           </a>
@@ -258,7 +316,10 @@ const RevenueCycleManagement = () => {
       {/* Additional Features */}
       <div className="row g-4 mb-5">
         <div className="col-12 col-md-4">
-          <div className="card h-100 text-center">
+          <div
+            className="card h-100 text-center"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body">
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/Adaptive-Strategy.svg"
@@ -276,7 +337,10 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-4">
-          <div className="card h-100 text-center">
+          <div
+            className="card h-100 text-center"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body">
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/Full-Transparency-2.svg"
@@ -294,7 +358,10 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
         <div className="col-12 col-md-4">
-          <div className="card h-100 text-center">
+          <div
+            className="card h-100 text-center"
+            style={{ border: "1px solid rgb(4, 158, 187)" }}
+          >
             <div className="card-body">
               <img
                 src="https://carecloud.com/wp-content/uploads/2025/03/Above-Beyond-2.svg"
@@ -349,7 +416,7 @@ const RevenueCycleManagement = () => {
         <div className="col-12">
           <h3 className="position-relative">
             <img
-              src="/wp-content/uploads/2025/03/qu.svg"
+              src="https://carecloud.com/wp-content/uploads/2025/02/unnamed-file.png"
               alt="Quote"
               className="quoteImg"
               style={{
@@ -363,7 +430,7 @@ const RevenueCycleManagement = () => {
             needs, and the workflow analysis is incredibly helpful. We've been
             able to reduce our administrative workload by 70%."
             <img
-              src="/wp-content/uploads/2025/03/qu.svg"
+              src="https://carecloud.com/wp-content/uploads/2025/02/unnamed-file.png"
               alt="Quote"
               className="quoteImg1"
               style={{
@@ -494,13 +561,14 @@ const RevenueCycleManagement = () => {
         <div className="col-12">
           <p>We’re Here to Help</p>
           <h3>Streamline Your Practice with CareCloud</h3>
-          <div className="row g-4">
+          <div className="row g-4" style={{ marginTop: "50px" }}>
             <div className="col-12 col-md-4">
               <h4>See CareCloud in Action</h4>
               <p>Discover how our platform can transform your workflow.</p>
               <a
-                href="https://carecloud.com/request-a-free-demo/"
-                className="btn btn-primary btn-lg"
+                href="#"
+                className="btn  btn-lg"
+                style={{ background: "rgb(4, 158, 187)", color: "#fff" }}
               >
                 <i className="fas fa-angle-right"></i> Book Your Demo
               </a>
@@ -509,10 +577,11 @@ const RevenueCycleManagement = () => {
               <h4>Need Quick Support? Let’s Chat</h4>
               <p>Our experts are ready to assist you in real-time.</p>
               <a
-                href="https://carecloud.com/chat/"
-                className="btn btn-primary btn-lg"
+                href="#"
+                className="btn  btn-lg"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ background: "rgb(4, 158, 187)", color: "#fff" }}
               >
                 <i className="fas fa-angle-right"></i> Chat with Us Instantly
               </a>
@@ -520,9 +589,12 @@ const RevenueCycleManagement = () => {
             <div className="col-12 col-md-4">
               <h4>Talk to an Expert Today</h4>
               <p>1-877-342-7517</p>
-              <a href="tel:1-877-342-7517" className="btn btn-primary btn-lg">
-                <i className="fas fa-angle-right"></i> Get Personalized
-                Assistance
+              <a
+                href="tel:1-877-342-7517"
+                className="btn  btn-lg"
+                style={{ background: "rgb(4, 158, 187)", color: "#fff" }}
+              >
+                <i className="fas fa-angle-right"></i> Get Assistance
               </a>
             </div>
           </div>
