@@ -42,7 +42,7 @@ const Navbar = () => {
           className="logo d-flex align-items-center me-auto me-xl-0"
         >
           <img
-            src="public/assets/img/billing-vista-logo.jpg"
+            src="/assets/img/billing-vista-logo.jpg"
             style={{ width: "115px", height: "100px" }}
           />
         </NavLink>
