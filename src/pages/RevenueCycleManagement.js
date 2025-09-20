@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RevenueCycleManagement = () => {
   return (
@@ -17,9 +18,9 @@ const RevenueCycleManagement = () => {
           </h1>
           <p className="lead">
             Achieve a denial rate under 3%* and up to 97%* First Time Pass Rate
-            approval with CareCloud’s Revenue Cycle Management (RCM) system.
-            Convert billing challenges into revenue opportunities with
-            CareCloud.
+            approval with Billing Vista Revenue Cycle Management (RCM) system.
+            Convert billing challenges into revenue opportunities with Billing
+            Vista.
           </p>
         </div>
       </div>
@@ -31,13 +32,15 @@ const RevenueCycleManagement = () => {
         data-aos-delay="100"
       >
         <div className="col-12 col-md-6 text-center">
-          <a
-            href="#"
-            className="btn btn-primary btn-lg me-2 mb-2 border-0"
-            style={{ backgroundColor: "rgb(4, 158, 187)" }}
-          >
-            <i className="fas fa-angle-right"></i> Get a demo
-          </a>
+          <Link to="/bookdemo">
+            <a
+              href="#"
+              className="btn btn-primary btn-lg me-2 mb-2 border-0"
+              style={{ backgroundColor: "rgb(4, 158, 187)" }}
+            >
+              <i className="fas fa-angle-right"></i> Get a free demo
+            </a>
+          </Link>
           <a
             href="#"
             className="btn btn-outline-primary btn-lg mb-2 "
@@ -75,7 +78,7 @@ const RevenueCycleManagement = () => {
         data-aos-delay="100"
       >
         <div className="col-12">
-          <p className="h4">CareCloud All-in-one</p>
+          <p className="h4">Billing Vista All-in-one</p>
           <p className="h5">RCM is just part of our All-in-One Solution</p>
           <a
             href="/solutions/"
@@ -151,11 +154,11 @@ const RevenueCycleManagement = () => {
             AI-Powered Solutions for Smarter Revenue Cycle Management
           </h3>
           <p className="lead">
-            CareCloud’s AI-powered RCM software will accelerate your practice’s
-            cash flow. Improve claim acceptance rate, optimize billing, and
-            simplify financial management with an all-in-one cloud-based RCM
-            solution. Ensure consistent revenue growth with data-driven
-            insights.
+            Billing Vista AI-powered RCM software will accelerate your
+            practice’s cash flow. Improve claim acceptance rate, optimize
+            billing, and simplify financial management with an all-in-one
+            cloud-based RCM solution. Ensure consistent revenue growth with
+            data-driven insights.
           </p>
         </div>
       </div>
@@ -281,14 +284,13 @@ const RevenueCycleManagement = () => {
       {/* Free RCM Assessment */}
       <div className="row justify-content-center text-center mb-5">
         <div className="col-12">
-          <h5>Optimize Your Revenue Cycle with CareCloud</h5>
+          <h5>Optimize Your Revenue Cycle with Billing Vista</h5>
           <h3>Get Your Free RCM Assessment</h3>
           <p className="lead">
             Maximize collections, minimize administrative burden, and improve
-            financial performance with our expert-driven RCM solutions.
-            CareCloud’s revenue cycle assessments (RCAs) help practices of all
-            sizes streamline operations, reduce denials, and accelerate
-            payments.
+            financial performance with our expert-driven RCM solutions. Billing
+            Vista revenue cycle assessments (RCAs) help practices of all sizes
+            streamline operations, reduce denials, and accelerate payments.
           </p>
           <a
             href="#"
@@ -450,7 +452,7 @@ const RevenueCycleManagement = () => {
       <div className="row justify-content-center mb-5">
         <div className="col-12 text-center">
           <p className="text-muted small">
-            *Based on the national average. CareCloud makes no guarantee,
+            *Based on the national average. Billing Vista makes no guarantee,
             warranty, or representation concerning the outcome of your practice,
             as many factors may impact actual results, including, but not
             limited to, geographic location and size of practice.
@@ -504,7 +506,7 @@ const RevenueCycleManagement = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Why is CareCloud the Best Choice for Your RCM Needs?
+                  Why is Billing Vista the Best Choice for Your RCM Needs?
                 </button>
               </h2>
               <div
@@ -514,12 +516,12 @@ const RevenueCycleManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  CareCloud offers a cutting-edge RCM solution powered by
+                  Billing Vista offers a cutting-edge RCM solution powered by
                   automation and AI-driven microbots. It reduces manual errors,
                   speeds up claims processing, and optimizes cash flow. With
                   seamless EHR and PM integration, built-in compliance measures,
-                  and advanced analytics, CareCloud helps healthcare providers
-                  maximize revenue while improving efficiency.
+                  and advanced analytics, Billing Vista helps healthcare
+                  providers maximize revenue while improving efficiency.
                 </div>
               </div>
             </div>
@@ -533,7 +535,7 @@ const RevenueCycleManagement = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Does CareCloud Offer an End-to-End RCM Solution?
+                  Does Billing Vista Offer an End-to-End RCM Solution?
                 </button>
               </h2>
               <div
@@ -543,11 +545,11 @@ const RevenueCycleManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Yes! CareCloud provides a fully integrated, end-to-end RCM
+                  Yes! Billing Vista provides a fully integrated, end-to-end RCM
                   solution that covers everything from patient registration and
                   insurance verification to claims processing, denial
                   management, and payment posting. With automated workflows and
-                  real-time insights, CareCloud ensures smooth revenue cycle
+                  real-time insights, Billing Vista ensures smooth revenue cycle
                   operations for practices of all sizes.
                 </div>
               </div>
@@ -560,10 +562,10 @@ const RevenueCycleManagement = () => {
       <div className="row justify-content-center text-center mb-5">
         <div className="col-12">
           <p>We’re Here to Help</p>
-          <h3>Streamline Your Practice with CareCloud</h3>
+          <h3>Streamline Your Practice with Billing Vista </h3>
           <div className="row g-4" style={{ marginTop: "50px" }}>
             <div className="col-12 col-md-4">
-              <h4>See CareCloud in Action</h4>
+              <h4>See Billing Vista in Action</h4>
               <p>Discover how our platform can transform your workflow.</p>
               <a
                 href="#"
@@ -588,9 +590,9 @@ const RevenueCycleManagement = () => {
             </div>
             <div className="col-12 col-md-4">
               <h4>Talk to an Expert Today</h4>
-              <p>1-877-342-7517</p>
+              <p>1-253-545-7843</p>
               <a
-                href="tel:1-877-342-7517"
+                href="tel:1-253-545-7843"
                 className="btn  btn-lg"
                 style={{ background: "rgb(4, 158, 187)", color: "#fff" }}
               >

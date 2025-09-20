@@ -29,7 +29,7 @@ const MedicalCredentialing = () => {
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h1 className="display-5 fw-bold ">Medical Credentialing</h1>
+        <h1 className="display-5 fw-bold ">Physician Credentialing</h1>
       </div>
 
       {/* Core Features */}
@@ -38,8 +38,8 @@ const MedicalCredentialing = () => {
           Core Features of Our Credentialing Services
         </h3>
         <p className="text-center mb-5">
-          CareCloud’s innovative approach combines technology and expert support
-          to streamline provider enrollment and reduce delays.
+          Billing Vista innovative approach combines technology and expert
+          support to streamline provider enrollment and reduce delays.
         </p>
 
         <div className="row g-4">
@@ -577,12 +577,13 @@ const MedicalCredentialing = () => {
 
       {/* Call to Action */}
       <div
-        className="text-center bg-primary text-white p-5 rounded"
+        className="text-center  text-white p-5 rounded"
         data-aos="fade-up"
         data-aos-delay="200"
+        style={{ background: "#049ebb" }}
       >
         <h2 className="mb-3" style={{ color: "white" }}>
-          Streamline Your Practice with CareCloud
+          Streamline Your Practice with Billing Vista
         </h2>
         <p className="mb-4">
           Discover how our platform can transform your workflow.
@@ -628,7 +629,7 @@ const MedicalCredentialing = () => {
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
               >
-                How does CareCloud speed up enrollment?
+                How does Billing Vista speed up enrollment?
               </button>
             </h2>
             <div
@@ -637,9 +638,9 @@ const MedicalCredentialing = () => {
               data-bs-parent="#faqAccordion"
             >
               <div className="accordion-body">
-                CareCloud offers a streamlined, technology-driven process with
-                expert follow-ups and real-time tracking to reduce delays and
-                errors.
+                Billing Vista offers a streamlined, technology-driven process
+                with expert follow-ups and real-time tracking to reduce delays
+                and errors.
               </div>
             </div>
           </div>

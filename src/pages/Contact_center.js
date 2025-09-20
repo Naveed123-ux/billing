@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
 import "../Billins.css";
+import { Link } from "react-router-dom";
 
-const MedicalBillingPage = () => {
+const ContactCenter = () => {
   const [formData, setFormData] = useState({
     companyName: "",
     name: "",
@@ -53,49 +54,43 @@ const MedicalBillingPage = () => {
           <div className="row align-items-center">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <p className="text-light mb-2">
-                Reliable, Transparent, and Scalable Billing for Modern Practices
+                24/7 Contact Center & Patient Scheduling Services
               </p>
               <h1
                 className="display-4 fw-bold mb-4 mt-4"
                 style={{ fontSize: "2.5rem" }}
               >
-                End-to-End Medical Billing and Coding That Simplifies Your
-                Revenue Cycle
+                Reliable, HIPAA compliant support for healthcare providers
               </h1>
-              <p className="lead mb-4" style={{ color: "rgb(4, 158, 187)" }}>
-                We help healthcare providers take control of their revenue cycle
-                with expert medical billing and coding services. From accurate
-                claim submission to recovering aged receivables, we handle every
-                step so you can focus on patient care.
+              <p className="lead mb-4" style={{ color: "#496268" }}>
+                We handle patient calls, book appointments, and send reminders
+                so your schedule stays full and your team stays focused.
               </p>
-              <ul
-                className="list-unstyled"
-                style={{ color: "rgb(4, 158, 187)" }}
-              >
+              <ul className="list-unstyled" style={{ color: "#496268" }}>
                 <li className="d-flex align-items-center mb-3">
                   <i className="bi bi-check-circle-fill text-success me-3"></i>
-                  <span>Boost revenue by up to 30%</span>
+                  <span>24/7 Live Patient Support</span>
                 </li>
                 <li className="d-flex align-items-center mb-3">
                   <i className="bi bi-check-circle-fill text-success me-3"></i>
-                  <span>Achieve 98.9% first-pass acceptance</span>
+                  <span>Real-time patient scheduling</span>
                 </li>
                 <li className="d-flex align-items-center mb-3">
                   <i className="bi bi-check-circle-fill text-success me-3"></i>
-                  <span>Recover 120+ day-old AR with ease</span>
+                  <span>Automated appointment reminders</span>
                 </li>
                 <li className="d-flex align-items-center mb-3">
                   <i className="bi bi-check-circle-fill text-success me-3"></i>
-                  <span>Get 24/7 support from certified experts</span>
+                  <span>Less workload for your front desk</span>
                 </li>
               </ul>
               <button className="btn btn-danger btn-lg">
-                Consult with Denial Experts
+                Consult with Contact Center Experts
               </button>
             </div>
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
-                src="https://prombs.com/wp-content/uploads/2024/11/slide2-11.webp"
+                src="https://prombs.com/wp-content/uploads/2025/05/7-1.png"
                 alt="Medical Team Collaboration"
                 className="img-fluid"
               />
@@ -195,57 +190,6 @@ const MedicalBillingPage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
-              <h2 className=" mb-4">Why Choose Us For Denial Management</h2>
-              <p className="mb-4">
-                Our denial management services are designed to recover missed
-                revenue, minimize payment delays, and strengthen your revenue
-                cycle at every stage. We pinpoint the root causes of denials,
-                resolve workflow inefficiencies, and ensure each claim stays on
-                track through real-time monitoring and full transparency.
-              </p>
-              <p className="mb-4">
-                From underpayment recovery to aged A/R cleanup, we work to
-                ensure every dollar earned is collected. Our experienced billing
-                team leverages payer-specific strategies, crafts effective
-                appeals, and streamlines your billing operations so you can
-                focus on patient care instead of payment pursuit.
-              </p>
-              <button className="btn btn-danger">
-                Consult with Denial Experts
-              </button>
-            </div>
-            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
-              <h2 className=" mb-4">
-                Denial Management Services That Actually Work
-              </h2>
-              <p className="mb-4">
-                Our denial management services are designed to optimize your
-                processes, accelerate collections, reduce errors, and improve
-                cash flow. We deliver more than resubmissions, providing
-                data-driven solutions that achieve measurable results.
-              </p>
-              <div className="row">
-                <div className="col-md-4 text-center mb-3">
-                  <i className="bi bi-search  display-6"></i>
-                  <h6>Identifying Denial Reasons</h6>
-                </div>
-                <div className="col-md-4 text-center mb-3">
-                  <i className="bi bi-clipboard-data  display-6"></i>
-                  <h6>Categorizing Denial</h6>
-                </div>
-                <div className="col-md-4 text-center mb-3">
-                  <i className="bi bi-arrow-repeat  display-6"></i>
-                  <h6>Resubmitting Claims</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* End-to-End Billing Section */}
       <section className="bg-light py-5">
@@ -253,46 +197,39 @@ const MedicalBillingPage = () => {
           <div className="row align-items-center">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <img
-                src="https://prombs.com/wp-content/uploads/2025/05/passion.webp"
+                src="https://prombs.com/wp-content/uploads/2025/05/scheduale.webp"
                 alt="Medical billing team"
                 className="img-fluid rounded"
               />
             </div>
             <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
-              <p className=" mb-2">
-                Reliable, Transparent, and Scalable Billing for Modern Practices
-              </p>
               <h2 className="mb-4">
-                End-to-End Medical Billing and Coding That Simplifies Your
-                Revenue Cycle
+                End-to-End Contact Center Solutions for Patient Scheduling
               </h2>
               <p className="mb-4">
-                We help healthcare providers take control of their revenue cycle
-                with expert medical billing and coding services. From accurate
-                claim submission to recovering aged receivables, we handle every
-                step so you can focus on patient care.
+                Managing patient calls and appointments shouldn’t slow your
+                practice down. We deliver complete contact center and patient
+                scheduling services designed for today’s healthcare providers.
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-center mb-2">
                   <i className="bi bi-check-circle text-success me-2"></i>
-                  <span>Boost revenue by up to 30%</span>
+
+                  <span> Patient Scheduling Services</span>
                 </li>
                 <li className="d-flex align-items-center mb-2">
                   <i className="bi bi-check-circle text-success me-2"></i>
-                  <span>Achieve 98.9% first-pass acceptance</span>
+                  <span>Insurance Verification</span>
                 </li>
                 <li className="d-flex align-items-center mb-2">
                   <i className="bi bi-check-circle text-success me-2"></i>
-                  <span>Recover 120+ day-old AR with ease</span>
+                  <span>Reporting and Analytics</span>
                 </li>
                 <li className="d-flex align-items-center mb-2">
                   <i className="bi bi-check-circle text-success me-2"></i>
-                  <span>Get 24/7 support from certified experts</span>
+                  <span>HIPAA-Compliant Scheduling and Call Handling</span>
                 </li>
               </ul>
-              <button className="btn btn-danger">
-                Get a Free Billing Audit Now
-              </button>
             </div>
           </div>
         </div>
@@ -304,29 +241,30 @@ const MedicalBillingPage = () => {
           <div className="row">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h2 className=" mb-4">
-                How We Simplify Medical Billing and Coding From Start to Finish
+                End-to-End Contact Center Solutions for Patient Scheduling
               </h2>
               <p className="mb-4">
-                We handle the entire billing process so you don't have to. From
-                patient scheduling to final payment, our certified team manages
-                every step with accuracy and care.
+                Managing patient calls and appointments shouldn’t slow your
+                practice down. We deliver complete contact center and patient
+                scheduling services designed for today’s healthcare providers.
               </p>
               <p className="mb-4">
-                Once care is delivered, our experts take over the medical coding
-                services. We assign the correct codes, follow the latest rules,
-                and make sure nothing is missed.
+                Our trained medical call center team answers every call, manages
+                physician scheduling, confirms appointments, and sends automated
+                reminders, while staying fully HIPAA compliant. We also offer
+                patient self-scheduling tools so your patients can book
+                appointments anytime they need.
               </p>
               <p className="mb-4">
-                Next comes claims submission. Every claim is tracked until it's
-                resolved. If a payer denies it, our denial management team jumps
-                in to correct and resubmit it quickly.
+                Whether you need full scheduling support or just after-hours
+                coverage, we help you stay connected, reduce no-shows, and keep
+                your schedule running smoothly.
               </p>
-              <button className="btn btn-danger">Let's Get Started</button>
             </div>
             <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <div className="text-center">
                 <img
-                  src="https://prombs.com/wp-content/uploads/2025/05/outsouce-1024x887.webp"
+                  src=" https://prombs.com/wp-content/uploads/2025/05/contact-centre1.webp"
                   alt="Revenue Cycle Management"
                   className="img-fluid"
                 />
@@ -337,124 +275,25 @@ const MedicalBillingPage = () => {
       </section>
 
       {/* Service Features Section */}
-      <section className="bg-light py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <img
-                src="http://prombs.com/wp-content/uploads/2024/10/Why-Pro-Medical-Billing-Solutions11.webp"
-                alt="Medical billing specialists"
-                className="img-fluid rounded"
-              />
-            </div>
-            <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
-              <h2 className=" mb-4">
-                Let a Medical Billing Specialist Handle the Process for You
-              </h2>
-              <p className="mb-4">
-                Outsourcing to a trusted medical billing specialist helps reduce
-                delays, improve accuracy, and speed up your revenue cycle. We
-                handle the full medical billing process using proven systems.
-              </p>
-
-              <div className="row g-3 mb-4">
-                <div className="col-md-6">
-                  <div
-                    className="card  text-white text-center p-3"
-                    style={{ background: "rgb(4, 158, 187)", color: "white" }}
-                  >
-                    <i className="bi bi-clock display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>On-Time Claim Submission</h6>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div
-                    className="card  text-white text-center p-3"
-                    style={{ background: "rgb(4, 158, 187)", color: "white" }}
-                  >
-                    <i className="bi bi-file-text display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>
-                      Quick Clear Documentation
-                    </h6>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div
-                    className="card  text-white text-center p-3"
-                    style={{ background: "rgb(4, 158, 187)", color: "white" }}
-                  >
-                    <i className="bi bi-link display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>
-                      Integration With Insurance System
-                    </h6>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div
-                    className="card  text-white text-center p-3"
-                    style={{ background: "rgb(4, 158, 187)", color: "white" }}
-                  >
-                    <i className="bi bi-shield-check display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>
-                      Regular Audits & Compliance
-                    </h6>
-                  </div>
-                </div>
-              </div>
-
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <div className="card bg-success text-white text-center p-3">
-                    <i className="bi bi-gear display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>
-                      Billing Automation System
-                    </h6>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="card bg-success text-white text-center p-3">
-                    <i className="bi bi-code-slash display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>
-                      Efficient billing & Coding
-                    </h6>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="card bg-success text-white text-center p-3">
-                    <i className="bi bi-person-check display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>
-                      Accurate Patient Information
-                    </h6>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="card bg-success text-white text-center p-3">
-                    <i className="bi bi-cpu display-6 mb-2"></i>
-                    <h6 style={{ color: "white" }}>Robust Coding Systems</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Outcomes Section with Contact Form */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8" data-aos="fade-down" data-aos-delay="100">
               <h2 className="t mb-4">
-                What Sets Our Medical Billing and Coding Services Apart
+                What Makes Our Patient Scheduling Services Stand Out
               </h2>
               <p className="mb-4">
-                If you're ready to improve collections, reduce denials, and get
-                faster payments, you're in the right place. Our certified team
-                delivers expert medical billing and coding services designed to
-                improve every stage of the billing cycle.
+                We provide flexible and affordable patient scheduling services
+                tailored to healthcare providers, clinics, and hospitals. Our
+                approach helps reduce wait times, improve patient satisfaction,
+                and increase front office productivity.
               </p>
 
-              <h3 className=" mb-4">The Outcomes We Help Providers Achieve</h3>
+              <h3 className=" mb-4">
+                Why Healthcare Providers Rely on Our Medical Billing Services
+              </h3>
 
               <div className="row g-4 mb-5">
                 <div className="col-md-3 text-center">
@@ -607,7 +446,7 @@ const MedicalBillingPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Specialties Section */}
       <section className="bg-light py-5">
@@ -615,13 +454,14 @@ const MedicalBillingPage = () => {
           <div className="row">
             <div className="col-lg-8" data-aos="fade-up" data-aos-delay="100">
               <h2 className=" mb-4">
-                Billing and Coding Services for Every Specialty and Practice
-                Size
+                Partnering with Providers Across All Specialties
               </h2>
               <p className="mb-4">
-                We support a wide range of providers with customized medical
-                billing and coding services that improve accuracy, reduce
-                delays, and help you get paid faster.
+                We work with healthcare organizations nationwide to streamline
+                scheduling workflows, reduce administrative burdens, and improve
+                patient care. Our team specializes in delivering tailored
+                patient scheduling services and medical billing solutions across
+                a wide range of medical specialties.
               </p>
 
               <div className="row g-3">
@@ -1153,7 +993,7 @@ const MedicalBillingPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section
+      {/* <section
         className="bg-light py-5"
         data-aos="fade-up"
         data-aos-delay="200"
@@ -1271,7 +1111,7 @@ const MedicalBillingPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Section */}
       <section className=" text-white py-5" style={{ background: "#049ebb" }}>
@@ -1283,12 +1123,12 @@ const MedicalBillingPage = () => {
               data-aos-delmeday="100"
             >
               <h2 className="mb-4" style={{ color: "white" }}>
-                What Sets Our Medical Billing and Coding Services Apart
+                What Makes Our Patient Scheduling Services Stand Out
               </h2>
               <div className="row text-center">
                 <div className="col-md-3 mb-3">
                   <i className="bi bi-lightning text-warning display-6"></i>
-                  <p>Quick Turnaround Times</p>
+                  <p>Rapid Revenue Recovery</p>
                 </div>
                 <div className="col-md-3 mb-3">
                   <i className="bi bi-headset text-warning display-6"></i>
@@ -1296,11 +1136,11 @@ const MedicalBillingPage = () => {
                 </div>
                 <div className="col-md-3 mb-3">
                   <i className="bi bi-award text-warning display-6"></i>
-                  <p>Qualified Coding Auditors</p>
+                  <p>Short Turnaround Time</p>
                 </div>
                 <div className="col-md-3 mb-3">
                   <i className="bi bi-calendar-check text-warning display-6"></i>
-                  <p>30 Days Free Trial</p>
+                  <p>Revenue Increase</p>
                 </div>
               </div>
             </div>
@@ -1311,16 +1151,10 @@ const MedicalBillingPage = () => {
             >
               <div className="bg-white text-dark p-4 rounded">
                 <i className="bi bi-heart-pulse  display-4 mb-3"></i>
-                <h5 className="">
-                  Let's Simplify Your Medical Billing and Coding
-                </h5>
-                <p>
-                  Expert medical billing services tailored for your practice.
-                  Fewer errors. Faster payments. Smarter billing in healthcare.
-                </p>
-                <button className="btn btn-danger">
-                  Get a Free Billing Consultation →
-                </button>
+                <br></br>
+                <Link to="/bookdemo" className="mx-auto">
+                  <button className="btn btn-danger">Get a Free Demo</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -1330,4 +1164,4 @@ const MedicalBillingPage = () => {
   );
 };
 
-export default MedicalBillingPage;
+export default ContactCenter;

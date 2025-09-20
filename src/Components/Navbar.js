@@ -42,8 +42,8 @@ const Navbar = () => {
           className="logo d-flex align-items-center me-auto me-xl-0"
         >
           <img
-            src="/assets/img/billing-vista-logo.jpg"
-            style={{ width: "115px", height: "100px" }}
+            src="/assets/img/billing-vista-logo.png"
+            style={{ width: "115px", height: "130px" }}
           />
         </NavLink>
 
@@ -109,11 +109,6 @@ const Navbar = () => {
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
               </a>
               <ul>
-                <li>
-                  <NavLink to="/revenue-cycle-management">
-                    Revenue Cycle
-                  </NavLink>
-                </li>
                 {/* <li className="dropdown">
                   <a href="#">
                     <span>Deep Dropdown</span>{" "}
@@ -138,23 +133,33 @@ const Navbar = () => {
                   </ul>
                 </li> */}
                 <li>
-                  <NavLink to="/ehr">Electronic health records</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/front-desk">FrontDesk Assist</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/medical-credentialing">
-                    Medical Credentialing
-                  </NavLink>
-                </li>
-                <li>
                   <NavLink to="/medical-billing">
                     Medical Billing and Coding
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/denial">AR & Denial Management</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/medical-credentialing">
+                    Physician Credentialing Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/revenue-cycle-management">
+                    Revenue Cycle
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact-center">
+                    Contact Center and Patient Scheduling Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/ehr">Electronic Health Records</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/front-desk">FrontDesk Assist</NavLink>
                 </li>
               </ul>
             </li>

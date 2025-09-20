@@ -63,7 +63,7 @@ const About = () => {
                             data-purecounter-duration="1"
                             class="purecounter"
                           ></span>
-                          +
+                          6+
                         </div>
                         <div class="stat-label">Years of Experience</div>
                       </div>

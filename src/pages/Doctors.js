@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Doctors = () => {
   return (
@@ -67,9 +68,12 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">15+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    {" "}
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -110,9 +114,12 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">12+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    {" "}
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -153,9 +160,11 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">18+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -196,9 +205,11 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">20+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -240,9 +251,11 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">14+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -284,9 +297,11 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">16+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -328,9 +343,11 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">22+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -372,9 +389,11 @@ const Doctors = () => {
                   <div class="doctor-experience">
                     <span class="experience-badge">19+ Years Experience</span>
                   </div>
-                  <a href="appointment.html" class="btn-appointment">
-                    Book Appointment
-                  </a>
+                  <Link to="/appointment">
+                    <a href="appointment.html" class="btn-appointment">
+                      Book Appointment
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

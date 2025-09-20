@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const FrontDesk = () => {
   return (
@@ -25,27 +25,29 @@ const FrontDesk = () => {
                 outcomes.
               </p>
               <div className="d-flex gap-3">
-                <a
-                  href="#"
-                  className="btn  btn-sm d-flex align-items-center gap-2"
-                  style={{
-                    backgroundColor: "rgb(4, 158, 187)",
-                    color: "white",
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="bi bi-chevron-right"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 256 512"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <Link to="/bookdemo">
+                  <a
+                    href="#"
+                    className="btn  btn-sm d-flex align-items-center gap-2"
+                    style={{
+                      backgroundColor: "rgb(4, 158, 187)",
+                      color: "white",
+                    }}
                   >
-                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-                  </svg>
-                  Get a demo
-                </a>
+                    <svg
+                      aria-hidden="true"
+                      className="bi bi-chevron-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 256 512"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                    </svg>
+                    Get a free demo
+                  </a>
+                </Link>
                 <a
                   href="#"
                   target="_blank"
@@ -94,7 +96,7 @@ const FrontDesk = () => {
           <div className="row align-items-center">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h4 className="" style={{ color: "rgb(4, 158, 187)" }}>
-                CareCloud All-in-one
+                Billing Vista All-in-one
               </h4>
               <h3 className="mb-4">
                 FrontDesk Assist just part of our All-in-One Solution
@@ -170,7 +172,7 @@ const FrontDesk = () => {
             FrontDesk Assist transforms your front-end workflows
           </h3>
           <p className="text-center mb-5">
-            FrontDesk Assist by CareCloud is a comprehensive, customizable
+            FrontDesk Assist by Billing Vista is a comprehensive, customizable
             front-office services solution that helps medical practices simplify
             scheduling, accelerate authorizations, and reduce administrative
             burdens—so your team can focus on what matters most—delivering
@@ -369,7 +371,7 @@ const FrontDesk = () => {
                 Seamlessly Integrated with Your RCM & EHR
               </h3>
               <p>
-                FrontDesk Assist integrates natively with CareCloud’s EHR and
+                FrontDesk Assist integrates natively with Billing Vista EHR and
                 RCM solutions, creating a seamless experience from check-in to
                 reimbursement. Whether you’re looking to streamline operations,
                 expand capacity, or improve financial performance, FrontDesk
@@ -474,33 +476,36 @@ const FrontDesk = () => {
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h3 className="mb-4">Ready to level up your front office?</h3>
               <p>
-                Contact us today to see how CareCloud FrontDesk Assist can
+                Contact us today to see how Billing Vista FrontDesk Assist can
                 simplify your operations and elevate the patient journey.
               </p>
             </div>
             <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <div className="d-flex gap-3 flex-wrap">
-                <a
-                  href="#"
-                  className="btn  btn-sm d-flex align-items-center gap-2"
-                  style={{
-                    backgroundColor: "rgb(4, 158, 187)",
-                    color: "white",
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="bi bi-chevron-right"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 256 512"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <Link>
+                  {" "}
+                  <a
+                    href="#"
+                    className="btn  btn-sm d-flex align-items-center gap-2"
+                    style={{
+                      backgroundColor: "rgb(4, 158, 187)",
+                      color: "white",
+                    }}
                   >
-                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-                  </svg>
-                  Schedule a demo
-                </a>
+                    <svg
+                      aria-hidden="true"
+                      className="bi bi-chevron-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 256 512"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                    </svg>
+                    Schedule a demo
+                  </a>
+                </Link>
                 <a
                   href="#"
                   className="btn btn-outline-primary btn-sm d-flex align-items-center gap-2"
@@ -569,13 +574,15 @@ const FrontDesk = () => {
             <h6 className="" style={{ color: "rgb(4, 158, 187)" }}>
               We’re Here to Help
             </h6>
-            <h3 className="mb-4">Streamline Your Practice with CareCloud</h3>
+            <h3 className="mb-4">
+              Streamline Your Practice with Billing Vista
+            </h3>
           </div>
           <div className="row g-4">
             <div className="col-md-4">
               <div className="card h-100">
                 <div className="card-body text-center">
-                  <h4 className="card-title">See CareCloud in Action</h4>
+                  <h4 className="card-title">See Billing Vista in Action</h4>
                   <p className="card-text">
                     Discover how our platform can transform your workflow.
                   </p>

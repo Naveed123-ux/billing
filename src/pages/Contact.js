@@ -48,7 +48,7 @@ const Contact = () => {
                   </div>
                   <div class="card-content">
                     <h4>Our Location</h4>
-                    <p>4952 Hilltop Dr, Anytown, CA 90210</p>
+                    <p>5900 Balcones Drive # 5164 ,Austin, TX 78731</p>
                   </div>
                 </div>
 
@@ -58,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div class="card-content">
                     <h4>Email Us</h4>
-                    <p>info@example.com</p>
+                    <p>info@billingvista.com</p>
                   </div>
                 </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div class="card-content">
                     <h4>Call Us</h4>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+1 (253) 545-7483</p>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div class="card-content">
                     <h4>Working Hours</h4>
-                    <p>Monday-Saturday: 9AM - 7PM</p>
+                    <p>Monday-Saturday: 7AM - 4PM</p>
                   </div>
                 </div>
               </div>

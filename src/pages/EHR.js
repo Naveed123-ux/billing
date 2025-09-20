@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const EHRPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
@@ -32,16 +32,20 @@ const EHRPage = () => {
             improve efficiency, outcomes, and profitability.
           </p>
           <div className="d-flex gap-3">
-            <a
-              href="#"
-              className="btn  btn-sm"
-              style={{
-                backgroundColor: "rgb(4, 158, 187)",
-                color: "white",
-              }}
-            >
-              Schedule a demo <i className="fas fa-angle-right"></i>
-            </a>
+            <Link to="/bookdemo">
+              {" "}
+              <a
+                href="#"
+                className="btn  btn-sm"
+                style={{
+                  backgroundColor: "rgb(4, 158, 187)",
+                  color: "white",
+                }}
+              >
+                Schedule a demo <i className="fas fa-angle-right"></i>
+              </a>
+            </Link>
+
             <a
               href="#"
               className="btn  btn-sm"
@@ -72,7 +76,7 @@ const EHRPage = () => {
       {/* All-in-One Section */}
       <div className="row mb-5">
         <div className="col-12 text-center">
-          <h3 className="fw-bold">CareCloud All-in-one</h3>
+          <h3 className="fw-bold">Billing Vista All-in-one</h3>
           <p className="lead">
             Charts-EHR is just part of our All-in-One Solution
           </p>
@@ -162,7 +166,7 @@ const EHRPage = () => {
             An EHR Designed for You
           </h2>
           <p className="lead">
-            CareCloud’s EHR is designed to simplify your daily tasks, reduce
+            Billing Vista EHR is designed to simplify your daily tasks, reduce
             administrative burdens, and enhance patient care. With an intuitive
             interface and smart automation, you can streamline workflows,
             improve efficiency, and focus on your patients the most.
@@ -259,7 +263,7 @@ const EHRPage = () => {
       {/* Call to Action */}
       <div className="row text-center bg-light p-5 rounded">
         <div className="col-12">
-          <h3>Streamline Your Practice with CareCloud</h3>
+          <h3>Streamline Your Practice with Billing Vista</h3>
           <div className="d-flex justify-content-center gap-3 mt-3">
             <a
               href="#"

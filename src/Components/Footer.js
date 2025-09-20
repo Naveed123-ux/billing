@@ -8,16 +8,30 @@ const Footer = () => {
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footer-about">
             <NavLink to="/" className="logo d-flex align-items-center">
-              <span className="sitename">MediTrust</span>
+              <span className="sitename">
+                Billing Vista LLC
+                <span
+                  style={{
+                    fontSize: "10px",
+                    display: "block",
+                    textAlign: "right",
+                  }}
+                >
+                  By (MTBL)
+                </span>
+              </span>
+
+              <br />
             </NavLink>
+
             <div className="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY Useful Links</p>
+              <p>5900 Balcones Drive # 5164</p>
+              <p>Austin, TX 78731</p>
               <p className="mt-3">
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                <strong>Phone:</strong> <span>+1 (253) 545-7483</span>
               </p>
               <p>
-                <strong>Email:</strong> <span>info@example.com</span>
+                <strong>Email:</strong> <span>info@billingvista.com</span>
               </p>
             </div>
             <div className="social-links d-flex mt-4">
@@ -125,11 +139,11 @@ const Footer = () => {
       <div className="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>{" "}
-          <strong className="px-1 sitename">MediTrust</strong>{" "}
+          <strong className="px-1 sitename">Billing Vista</strong>{" "}
           <span>All Rights Reserved</span>
         </p>
         <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://github.com/Naveed123-ux">Naveed Zafar</a>
         </div>
       </div>
     </footer>

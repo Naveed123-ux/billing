@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DepartmentDetails = () => {
   return (
@@ -212,9 +213,12 @@ const DepartmentDetails = () => {
                       at sem. Proin eget tortor risus.
                     </p>
                     <div class="cta-buttons">
-                      <a href="appointment.html" class="btn btn-primary">
-                        Book Appointment
-                      </a>
+                      <Link to="/appointment">
+                        <a href="appointment.html" class="btn btn-primary">
+                          Book Appointment
+                        </a>
+                      </Link>
+
                       <a href="services.html" class="btn btn-outline">
                         Learn More
                       </a>

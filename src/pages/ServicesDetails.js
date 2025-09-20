@@ -201,9 +201,11 @@ const ServicesDetails = () => {
               <div class="appointment-card">
                 <h4>Book Your Visit</h4>
                 <p>Quick and easy online scheduling</p>
-                <a href="appointment.html" class="btn-appointment">
-                  Book Appointment
-                </a>
+                <Link to="/appointment">
+                  <a href="appointment.html" class="btn-appointment">
+                    Book Appointment
+                  </a>
+                </Link>
                 <div class="contact-alternative">
                   <span>Or call us at</span>
                   <a href="tel:+15551234567">+1 (555) 123-4567</a>

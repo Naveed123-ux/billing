@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Department from "./pages/Department";
-
+import BookDemo from "./pages/BookDemo";
 import Services from "./pages/Services";
 import Doctors from "./pages/Doctors";
 import DepartmentDetails from "./pages/DepartmentDetails";
@@ -23,6 +23,7 @@ import RevenueCycleManagement from "./pages/RevenueCycleManagement";
 import MedicalCredentialing from "./pages/MedicalCredentialing";
 import Denial from "./pages/Denial";
 import MedicalBillingPage from "./pages/MedicalBilling";
+import ContactCenter from "./pages/Contact_center";
 
 function Layout() {
   return (
@@ -53,8 +54,10 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/bookdemo" element={<BookDemo />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/contact-center" element={<ContactCenter />} />
         <Route path="/404" element={<Page404 />} />
         <Route path="/front-desk" element={<FrontDesk />} />
         <Route

@@ -69,3 +69,8 @@ button:focus-visible {
 #root {
   width: 100%;
 }
+
+.mtbl-text {
+  font-size: 12px;
+  text-align: right;
+}
