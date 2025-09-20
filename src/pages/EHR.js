@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 const EHRPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const toggleAccordion = (index) => {
     setActiveAccordion(activeAccordion === index ? null : index);
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -33,10 +43,9 @@ const EHRPage = () => {
           </p>
           <div className="d-flex gap-3">
             <Link to="/bookdemo">
-              {" "}
               <a
                 href="#"
-                className="btn  btn-sm"
+                className="btn btn-sm"
                 style={{
                   backgroundColor: "rgb(4, 158, 187)",
                   color: "white",
@@ -46,18 +55,17 @@ const EHRPage = () => {
               </a>
             </Link>
 
-            <a
-              href="#"
-              className="btn  btn-sm"
+            <button
+              className="btn btn-sm"
               style={{
                 border: " 1px solid rgb(4, 158, 187)",
                 color: "rgb(4, 158, 187)",
+                backgroundColor: "transparent",
               }}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={openModal}
             >
               Contact Sales <i className="fas fa-angle-right"></i>
-            </a>
+            </button>
           </div>
         </div>
         <div
@@ -66,7 +74,7 @@ const EHRPage = () => {
           data-aos-delay="100"
         >
           <img
-            src="https://carecloud.com/wp-content/uploads/2025/04/2025_03_intelligent_analytics_1_1x.webp"
+            src="https://carecloud.com/wp-content/uploads/2025/04/2025_03_intelligent_analytics_1_1x.webp  "
             alt="Healthcare Analytics Dashboard"
             className="img-fluid rounded"
           />
@@ -275,19 +283,92 @@ const EHRPage = () => {
             >
               Book Your Demo <i className="fas fa-angle-right"></i>
             </a>
-            <a
-              href="#"
-              className="btn  btn-sm"
+            <button
+              className="btn btn-sm"
               style={{
                 border: "1px solid rgb(4, 158, 187)",
                 color: "rgb(4, 158, 187)",
+                backgroundColor: "transparent",
               }}
+              onClick={openModal}
             >
               Chat with Us Instantly <i className="fas fa-angle-right"></i>
-            </a>
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Contact Sales Modal */}
+      {showModal && (
+        <div
+          className="modal fade show"
+          style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}
+          tabIndex="-1"
+          role="dialog"
+        >
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5
+                  className="modal-title"
+                  style={{ color: "rgb(4, 158, 187)" }}
+                >
+                  Contact Sales
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={closeModal}
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body text-center">
+                <div className="mb-4">
+                  <h6 className="fw-bold">Get in touch with our sales team</h6>
+                  <p className="text-muted">
+                    We're here to help you find the perfect solution for your
+                    practice.
+                  </p>
+                </div>
+                <div className="contact-info">
+                  <div className="mb-3">
+                    <i
+                      className="fas fa-phone me-2"
+                      style={{ color: "rgb(4, 158, 187)" }}
+                    ></i>
+                    <strong>Phone:</strong>{" "}
+                    <a href="tel:+12535457483" className="text-decoration-none">
+                      +1 (253) 545-7483
+                    </a>
+                  </div>
+                  <div className="mb-3">
+                    <i
+                      className="fas fa-envelope me-2"
+                      style={{ color: "rgb(4, 158, 187)" }}
+                    ></i>
+                    <strong>Email:</strong>{" "}
+                    <a
+                      href="mailto:info@billingvista.com"
+                      className="text-decoration-none"
+                    >
+                      info@billingvista.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="modal-footer justify-content-center">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={closeModal}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

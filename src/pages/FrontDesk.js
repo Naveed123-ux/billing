@@ -1,7 +1,16 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const FrontDesk = () => {
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
       {/* Hero Section with Image */}
@@ -48,29 +57,17 @@ const FrontDesk = () => {
                     Get a free demo
                   </a>
                 </Link>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn  btn-sm d-flex align-items-center gap-2"
+                <button
+                  className="btn btn-sm"
                   style={{
-                    border: "1px solid rgb(4, 158, 187)",
+                    border: " 1px solid rgb(4, 158, 187)",
                     color: "rgb(4, 158, 187)",
+                    backgroundColor: "transparent",
                   }}
+                  onClick={openModal}
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="bi bi-chevron-right"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 256 512"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-                  </svg>
-                  Contact Sales
-                </a>
+                  Contact Sales <i className="fas fa-angle-right"></i>
+                </button>
               </div>
             </div>
             <div
@@ -482,7 +479,7 @@ const FrontDesk = () => {
             </div>
             <div className="col-lg-6" data-aos="fade-down" data-aos-delay="100">
               <div className="d-flex gap-3 flex-wrap">
-                <Link>
+                <Link to="/bookdemo">
                   {" "}
                   <a
                     href="#"
@@ -503,7 +500,7 @@ const FrontDesk = () => {
                     >
                       <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
                     </svg>
-                    Schedule a demo
+                    Schedule a free demo
                   </a>
                 </Link>
                 <a
@@ -586,27 +583,29 @@ const FrontDesk = () => {
                   <p className="card-text">
                     Discover how our platform can transform your workflow.
                   </p>
-                  <a
-                    href="#"
-                    className="btn  btn-sm d-flex align-items-center gap-2 justify-content-center"
-                    style={{
-                      backgroundColor: "rgb(4, 158, 187)",
-                      color: "white",
-                    }}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="bi bi-chevron-right"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 256 512"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <Link to="/bookdemo">
+                    <a
+                      href="#"
+                      className="btn  btn-sm d-flex align-items-center gap-2 justify-content-center"
+                      style={{
+                        backgroundColor: "rgb(4, 158, 187)",
+                        color: "white",
+                      }}
                     >
-                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-                    </svg>
-                    Book Your Demo
-                  </a>
+                      <svg
+                        aria-hidden="true"
+                        className="bi bi-chevron-right"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 256 512"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                      </svg>
+                      Book Your Free Demo
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -674,6 +673,81 @@ const FrontDesk = () => {
             </div>
           </div>
         </div>
+        {showModal && (
+          <div
+            className="modal fade show"
+            style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}
+            tabIndex="-1"
+            role="dialog"
+          >
+            <div className="modal-dialog modal-dialog-centered" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5
+                    className="modal-title"
+                    style={{ color: "rgb(4, 158, 187)" }}
+                  >
+                    Contact Sales
+                  </h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    onClick={closeModal}
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body text-center">
+                  <div className="mb-4">
+                    <h6 className="fw-bold">
+                      Get in touch with our sales team
+                    </h6>
+                    <p className="text-muted">
+                      We're here to help you find the perfect solution for your
+                      practice.
+                    </p>
+                  </div>
+                  <div className="contact-info">
+                    <div className="mb-3">
+                      <i
+                        className="fas fa-phone me-2"
+                        style={{ color: "rgb(4, 158, 187)" }}
+                      ></i>
+                      <strong>Phone:</strong>{" "}
+                      <a
+                        href="tel:+12535457483"
+                        className="text-decoration-none"
+                      >
+                        +1 (253) 545-7483
+                      </a>
+                    </div>
+                    <div className="mb-3">
+                      <i
+                        className="fas fa-envelope me-2"
+                        style={{ color: "rgb(4, 158, 187)" }}
+                      ></i>
+                      <strong>Email:</strong>{" "}
+                      <a
+                        href="mailto:info@billingvista.com"
+                        className="text-decoration-none"
+                      >
+                        info@billingvista.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="modal-footer justify-content-center">
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={closeModal}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

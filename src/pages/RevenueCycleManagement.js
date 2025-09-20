@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const RevenueCycleManagement = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="container py-5">
       {/* Revenue Cycle Management Section */}
@@ -41,18 +51,17 @@ const RevenueCycleManagement = () => {
               <i className="fas fa-angle-right"></i> Get a free demo
             </a>
           </Link>
-          <a
-            href="#"
-            className="btn btn-outline-primary btn-lg mb-2 "
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            className="btn btn-outline-primary btn-lg mb-2"
+            onClick={openModal}
             style={{
               borderColor: "rgb(4, 158, 187)",
               color: "rgb(4, 158, 187)",
+              backgroundColor: "transparent",
             }}
           >
             <i className="fas fa-angle-right"></i> Contact Sales
-          </a>
+          </button>
         </div>
       </div>
 
@@ -155,7 +164,7 @@ const RevenueCycleManagement = () => {
           </h3>
           <p className="lead">
             Billing Vista AI-powered RCM software will accelerate your
-            practice’s cash flow. Improve claim acceptance rate, optimize
+            practice's cash flow. Improve claim acceptance rate, optimize
             billing, and simplify financial management with an all-in-one
             cloud-based RCM solution. Ensure consistent revenue growth with
             data-driven insights.
@@ -299,11 +308,9 @@ const RevenueCycleManagement = () => {
           >
             <i className="fas fa-angle-right"></i> Request Assessment
           </a>
-          <a
-            href="#"
-            className="btn  btn-lg mb-2"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            className="btn btn-lg mb-2"
+            onClick={openModal}
             style={{
               backgroundColor: "#fff",
               color: "rgb(4, 158, 187)",
@@ -311,7 +318,7 @@ const RevenueCycleManagement = () => {
             }}
           >
             <i className="fas fa-angle-right"></i> Contact Sales
-          </a>
+          </button>
         </div>
       </div>
 
@@ -561,22 +568,24 @@ const RevenueCycleManagement = () => {
       {/* Streamline Your Practice */}
       <div className="row justify-content-center text-center mb-5">
         <div className="col-12">
-          <p>We’re Here to Help</p>
+          <p>We're Here to Help</p>
           <h3>Streamline Your Practice with Billing Vista </h3>
           <div className="row g-4" style={{ marginTop: "50px" }}>
             <div className="col-12 col-md-4">
               <h4>See Billing Vista in Action</h4>
               <p>Discover how our platform can transform your workflow.</p>
-              <a
-                href="#"
-                className="btn  btn-lg"
-                style={{ background: "rgb(4, 158, 187)", color: "#fff" }}
-              >
-                <i className="fas fa-angle-right"></i> Book Your Demo
-              </a>
+              <Link to="/bookdemo">
+                <a
+                  href="#"
+                  className="btn  btn-lg"
+                  style={{ background: "rgb(4, 158, 187)", color: "#fff" }}
+                >
+                  <i className="fas fa-angle-right"></i> Book Your Demo
+                </a>
+              </Link>
             </div>
             <div className="col-12 col-md-4">
-              <h4>Need Quick Support? Let’s Chat</h4>
+              <h4>Need Quick Support? Let's Chat</h4>
               <p>Our experts are ready to assist you in real-time.</p>
               <a
                 href="#"
@@ -602,6 +611,78 @@ const RevenueCycleManagement = () => {
           </div>
         </div>
       </div>
+
+      {/* Contact Sales Modal */}
+      {showModal && (
+        <div
+          className="modal fade show"
+          style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}
+          tabIndex="-1"
+          role="dialog"
+        >
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5
+                  className="modal-title"
+                  style={{ color: "rgb(4, 158, 187)" }}
+                >
+                  Contact Sales
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={closeModal}
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body text-center">
+                <div className="mb-4">
+                  <h6 className="fw-bold">Get in touch with our sales team</h6>
+                  <p className="text-muted">
+                    We're here to help you find the perfect solution for your
+                    practice.
+                  </p>
+                </div>
+                <div className="contact-info">
+                  <div className="mb-3">
+                    <i
+                      className="fas fa-phone me-2"
+                      style={{ color: "rgb(4, 158, 187)" }}
+                    ></i>
+                    <strong>Phone:</strong>{" "}
+                    <a href="tel:+12535457483" className="text-decoration-none">
+                      +1 (253) 545-7483
+                    </a>
+                  </div>
+                  <div className="mb-3">
+                    <i
+                      className="fas fa-envelope me-2"
+                      style={{ color: "rgb(4, 158, 187)" }}
+                    ></i>
+                    <strong>Email:</strong>{" "}
+                    <a
+                      href="mailto:info@billingvista.com"
+                      className="text-decoration-none"
+                    >
+                      info@billingvista.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="modal-footer justify-content-center">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={closeModal}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
