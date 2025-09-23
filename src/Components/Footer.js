@@ -15,6 +15,7 @@ const Footer = () => {
                     fontSize: "10px",
                     display: "block",
                     textAlign: "right",
+                    marginTop: "10px",
                   }}
                 >
                   By (MBTL LLC)
