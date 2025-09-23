@@ -17,7 +17,7 @@ const Footer = () => {
                     textAlign: "right",
                   }}
                 >
-                  By (MTBL)
+                  By (MBTL LLC)
                 </span>
               </span>
 
@@ -92,7 +92,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-lg-2 col-md-3 footer-links">
+          {/* <div className="col-lg-2 col-md-3 footer-links">
             <h4>Hic solutasetp</h4>
             <ul>
               <li>
@@ -132,7 +132,7 @@ const Footer = () => {
                 <NavLink to="#">Flexo</NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 

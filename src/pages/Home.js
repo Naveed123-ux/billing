@@ -242,21 +242,108 @@ const Home = () => {
 
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
               <div class="about-content">
-                <h2>Committed to Exceptional Patient Care</h2>
+                <h2>Committed to Exceptional RCM Support</h2>
                 <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
+                  Billing Vista is a leading Medical Billing Company providing
+                  End-to-End Billing, Coding, and RCM support for clinics,
+                  practices, and hospitals
                 </p>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  consequat magna eu accumsan mattis. Duis non augue in tortor
-                  facilisis tincidunt ac sit amet sapien. Suspendisse id risus
-                  non nisi sodales condimentum.
-                </p>
+                <ul class="custom-icon-list">
+                  <li class="custom-icon-item">
+                    <span class="custom-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                        width="32"
+                        height="32"
+                        fill="none"
+                        stroke="#00a8c8"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M12 32h16l-6 12h12l-8 16 6-12H20l6-16H12z"
+                          fill="#00e676"
+                        />
+                        <circle cx="52" cy="12" r="6" fill="#00e676" />
+                      </svg>
+                    </span>
+                    <span class="custom-text">99% Claim Success</span>
+                  </li>
 
-                <div class="row g-4 mt-4">
+                  <li class="custom-icon-item">
+                    <span class="custom-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                        width="32"
+                        height="32"
+                        fill="none"
+                        stroke="#00a8c8"
+                        stroke-width="2"
+                      >
+                        <path d="M8 56V8m0 48h48" stroke="#00a8c8" />
+                        <path
+                          d="M16 40l8-12 8 8 12-16 8 12"
+                          stroke="#ff4081"
+                          stroke-width="3"
+                          fill="none"
+                        />
+                        <circle cx="16" cy="40" r="3" fill="#00e676" />
+                        <circle cx="24" cy="28" r="3" fill="#00e676" />
+                        <circle cx="32" cy="36" r="3" fill="#00e676" />
+                        <circle cx="44" cy="20" r="3" fill="#00e676" />
+                      </svg>
+                    </span>
+                    <span class="custom-text">24/7 Support Team</span>
+                  </li>
+
+                  <li class="custom-icon-item">
+                    <span class="custom-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                        width="32"
+                        height="32"
+                        fill="none"
+                        stroke="#00a8c8"
+                        stroke-width="2"
+                      >
+                        <circle cx="32" cy="32" r="10" fill="#00e676" />
+                        <path d="M32 12v6M32 46v6M12 32h6M46 32h6M19 19l4 4M41 41l4 4M19 45l4-4M41 23l4-4" />
+                      </svg>
+                    </span>
+                    <span class="custom-text">Future-Ready Solutions</span>
+                  </li>
+
+                  <li class="custom-icon-item">
+                    <span class="custom-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                        width="32"
+                        height="32"
+                        fill="none"
+                        stroke="#00a8c8"
+                        stroke-width="2"
+                      >
+                        <path d="M32 6L2 58h60L32 6z" fill="#00e676" />
+                        <line
+                          x1="32"
+                          y1="22"
+                          x2="32"
+                          y2="38"
+                          stroke="#fff"
+                          stroke-width="4"
+                        />
+                        <circle cx="32" cy="46" r="2" fill="#fff" />
+                      </svg>
+                    </span>
+                    <span class="custom-text">Zero Compliance Errors</span>
+                  </li>
+                </ul>
+
+                {/* <div class="row g-4 mt-4">
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-item">
                       <div class="icon">
@@ -280,7 +367,7 @@ const Home = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div class="cta-wrapper mt-4">
                   <a href="about.html" class="btn btn-primary">
@@ -621,19 +708,27 @@ const Home = () => {
                 <div class="service-content">
                   <h3>Medical billing and Coding</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    We help healthcare providers take control of their revenue
+                    cycle with expert medical billing and coding services. From
+                    accurate claim submission to recovering aged receivables, we
+                    handle every step so you can focus on patient care.
                   </p>
                   <ul class="service-features">
                     <li>
-                      <i class="fas fa-check-circle"></i>Advanced Heart Surgery
+                      <i class="fas fa-check-circle"></i>Boost revenue by up to
+                      30%
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>24/7 Emergency Care
+                      <i class="fas fa-check-circle"></i>Achieve 98.9%
+                      first-pass acceptance
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Preventive Screenings
+                      <i class="fas fa-check-circle"></i>Recover 120+ day-old AR
+                      with ease
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>Get 24/7 support from
+                      certified experts
                     </li>
                   </ul>
                   <Link to="/medical-billing" class="service-btn">
@@ -652,21 +747,27 @@ const Home = () => {
                 <div class="service-content">
                   <h3>AR & Denial Management</h3>
                   <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse.
+                    We go beyond managing denials by addressing their root
+                    causes. Through real-time claim tracking, A/R cleanup, and
+                    expert appeals, we help healthcare providers recover revenue
+                    and prevent future payer obstacles.
                   </p>
                   <ul class="service-features">
                     <li>
-                      <i class="fas fa-check-circle"></i>Brain Imaging &amp;
-                      Diagnostics
+                      <i class="fas fa-check-circle"></i>A/R Cleanup Strategies
+                      that improve cash flow
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Stroke Treatment Center
+                      <i class="fas fa-check-circle"></i>Underpayment Recovery
+                      to capture missed revenue
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Neurological
-                      Rehabilitation
+                      <i class="fas fa-check-circle"></i>Denial Prevention
+                      Systems to stop future rejections
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>Faster Claim Appeals
+                      with payer-specific workflows
                     </li>
                   </ul>
                   <Link to="/denial" class="service-btn">
@@ -685,21 +786,27 @@ const Home = () => {
                 <div class="service-content">
                   <h3>Physician Credentialing Services</h3>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Sed
-                    ut perspiciatis unde omnis iste natus error.
+                    Tired of delayed enrollments and rejected claims? PROMBS
+                    delivers complete physician credentialing services and
+                    insurance credentialing support for Medicare, Medicaid, and
+                    commercial payers.
                   </p>
                   <ul class="service-features">
                     <li>
-                      <i class="fas fa-check-circle"></i>Joint Replacement
-                      Surgery
+                      <i class="fas fa-check-circle"></i>Medicare, Medicaid, and
+                      commercial payer setup
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Sports Medicine
+                      <i class="fas fa-check-circle"></i>Certified provider
+                      credentialing specialists
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Minimally Invasive
-                      Procedures
+                      <i class="fas fa-check-circle"></i>Medicare, Medicaid, and
+                      commercial payer setup
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>Real-time status
+                      tracking and 24/7 support
                     </li>
                   </ul>
                   <Link to="/medical-credentialing" class="service-btn">
@@ -718,20 +825,25 @@ const Home = () => {
                 <div class="service-content">
                   <h3>Revenue Cycle</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.
+                    RCM solution which helps you Increase Revenue, Reduce
+                    Denials, and Improve Claim Turnaround Time.
                   </p>
                   <ul class="service-features">
                     <li>
-                      <i class="fas fa-check-circle"></i>24/7 Emergency
-                      Department
+                      <i class="fas fa-check-circle"></i>Improve first‑pass
+                      approval rates by up to 99%.
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Level 1 Trauma Center
+                      <i class="fas fa-check-circle"></i>Maximize reimbursements
+                      with expert charge capture.
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Critical Care Units
+                      <i class="fas fa-check-circle"></i>See KPIs like AR days,
+                      denial trends, and revenue growth
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>Free your team from
+                      administrative burdens.
                     </li>
                   </ul>
                   <Link to="/revenue-cycle-management" class="service-btn">
@@ -749,20 +861,26 @@ const Home = () => {
                 <div class="service-content">
                   <h3>Contact Center and Patient Scheduling Services</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.
+                    We handle patient calls, book appointments, and send
+                    reminders so your schedule stays full and your team stays
+                    focused.
                   </p>
                   <ul class="service-features">
                     <li>
-                      <i class="fas fa-check-circle"></i>24/7 Emergency
-                      Department
+                      <i class="fas fa-check-circle"></i>24/7 Live Patient
+                      Support
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Level 1 Trauma Center
+                      <i class="fas fa-check-circle"></i>Real-time patient
+                      scheduling
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Critical Care Units
+                      <i class="fas fa-check-circle"></i>Automated appointment
+                      reminders
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>Less workload for your
+                      front desk
                     </li>
                   </ul>
                   <a href="services.html" class="service-btn">
@@ -780,20 +898,25 @@ const Home = () => {
                 <div class="service-content">
                   <h3>Electronic Health Records</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.
+                    We simplify your workflow, secure patient data, and give
+                    your team more time to focus on care.
                   </p>
                   <ul class="service-features">
                     <li>
-                      <i class="fas fa-check-circle"></i>24/7 Emergency
-                      Department
+                      <i class="fas fa-check-circle"></i>Centralized patient
+                      records
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Level 1 Trauma Center
+                      <i class="fas fa-check-circle"></i>Secure, HIPAA-compliant
+                      data storage
                     </li>
                     <li>
-                      <i class="fas fa-check-circle"></i>Critical Care Units
+                      <i class="fas fa-check-circle"></i>Easy access from any
+                      device
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>Faster billing &
+                      insurance processing
                     </li>
                   </ul>
                   <Link to="/ehr" class="service-btn">
@@ -1083,11 +1206,11 @@ const Home = () => {
               <h2 data-aos="fade-up" data-aos-delay="200">
                 Your Revenue is Our Priority
               </h2>
-              <p data-aos="fade-up" data-aos-delay="250">
+              {/* <p data-aos="fade-up" data-aos-delay="250">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </p>
+              </p> */}
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
                 <a href="appointment.html" class="btn-primary">
@@ -1108,6 +1231,8 @@ const Home = () => {
                   Billing Vista ensures accuracy, compliance, and faster
                   payments every time.
                 </p>
+
+                <div className="below-divs"></div>
                 <a href="#" class="feature-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>

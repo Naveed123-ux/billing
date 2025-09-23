@@ -43,7 +43,7 @@ const Navbar = () => {
         >
           <img
             src="/assets/img/billing-vista-logo.png"
-            style={{ width: "115px", height: "130px" }}
+            style={{ width: "140px", height: "130px" }}
           />
         </NavLink>
 
@@ -57,15 +57,15 @@ const Navbar = () => {
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/department">Departments</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/services">Services</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/doctors">Doctors</NavLink>
-            </li>
+            </li> */}
             <li className="dropdown">
               <a href="#">
                 <span>More Pages</span>{" "}
