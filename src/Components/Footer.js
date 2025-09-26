@@ -143,9 +143,9 @@ const Footer = () => {
           <strong className="px-1 sitename">Billing Vista</strong>{" "}
           <span>All Rights Reserved</span>
         </p>
-        <div className="credits">
+        {/* <div className="credits">
           Designed by <a href="https://github.com/Naveed123-ux">Naveed Zafar</a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
