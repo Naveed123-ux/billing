@@ -60,50 +60,7 @@ const Navbar = () => {
             {/* <li>
               <NavLink to="/department">Departments</NavLink>
             </li> */}
-            <li>
-              <NavLink to="/services">Services</NavLink>
-            </li>
-            {/* <li>
-              <NavLink to="/doctors">Doctors</NavLink>
-            </li> */}
-            <li className="dropdown">
-              <a href="#">
-                <span>More Pages</span>{" "}
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li>
-                  <NavLink to="/department-details">Department Details</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/services-details">Service Details</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/appointment">Appointment</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/testimonials">Testimonials</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/faq">Frequently Asked Questions</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/gallery" className="active">
-                    Gallery
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/terms">Terms</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/privacy">Privacy</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/404">404</NavLink>
-                </li>
-              </ul>
-            </li>
-            <li className="dropdown">
+              <li className="dropdown">
               <a href="#">
                 <span>Solutions</span>{" "}
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
@@ -163,6 +120,47 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+            {/* <li>
+              <NavLink to="/doctors">Doctors</NavLink>
+            </li> */}
+            <li className="dropdown">
+              <a href="#">
+                <span>More Pages</span>{" "}
+                <i className="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul>
+                <li>
+                  <NavLink to="/department-details">Department Details</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services-details">Service Details</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/appointment">Appointment</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/testimonials">Testimonials</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/faq">Frequently Asked Questions</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/gallery" className="active">
+                    Gallery
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/terms">Terms</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/privacy">Privacy</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/404">404</NavLink>
+                </li>
+              </ul>
+            </li>
+           
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
