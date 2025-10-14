@@ -159,7 +159,7 @@ const Appointment = () => {
                       <i className="bi bi-telephone-fill me-2"></i>Contact
                     </h6>
                     <p className="mb-0">
-                      Call <strong>+1 (253) 545-7483</strong> for Billing
+                      Call <strong>512-270-6926</strong> for Billing
                       assistance
                     </p>
                   </div>

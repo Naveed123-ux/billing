@@ -150,7 +150,7 @@ const MedicalBillingPage = () => {
                       className="bi bi-award  display-4"
                       style={{ color: "#496268" }}
                     ></i>
-                    <h3 className="">6+</h3>
+                    <h3 className="">8+</h3>
                     <p>Years of Experience</p>
                   </div>
                   <div className="col-md-3 mb-4">
@@ -596,10 +596,10 @@ const MedicalBillingPage = () => {
 
                   <div className="mt-3">
                     <p className="mb-1">
-                      <i className="bi bi-telephone me-2"></i>(725) 237-2757
+                      <i className="bi bi-telephone me-2"></i>512-270-6926
                     </p>
                     <p>
-                      <i className="bi bi-envelope me-2"></i>info@prombs.com
+                      <i className="bi bi-envelope me-2"></i>info@billingvista.com
                     </p>
                   </div>
                 </div>

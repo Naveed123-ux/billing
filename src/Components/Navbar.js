@@ -120,10 +120,15 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+             <li>
+                  <NavLink to="/outsource">
+                   Why OutSource
+                  </NavLink>
+                </li>
             {/* <li>
               <NavLink to="/doctors">Doctors</NavLink>
             </li> */}
-            <li className="dropdown">
+            {/* <li className="dropdown">
               <a href="#">
                 <span>More Pages</span>{" "}
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
@@ -159,7 +164,7 @@ const Navbar = () => {
                   <NavLink to="/404">404</NavLink>
                 </li>
               </ul>
-            </li>
+            </li> */}
            
             <li>
               <NavLink to="/contact">Contact</NavLink>

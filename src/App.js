@@ -24,6 +24,7 @@ import MedicalCredentialing from "./pages/MedicalCredentialing";
 import Denial from "./pages/Denial";
 import MedicalBillingPage from "./pages/MedicalBilling";
 import ContactCenter from "./pages/Contact_center";
+import OutSource from "./pages/OutSource"
 
 function Layout() {
   return (
@@ -69,6 +70,7 @@ function App() {
           path="/medical-credentialing"
           element={<MedicalCredentialing />}
         />
+        <Route path="/outsource" element={<OutSource />} />
         <Route path="/denial" element={<Denial />} />
         <Route path="/medical-billing" element={<MedicalBillingPage />} />
       </Route>

@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div class="card-content">
                     <h4>Call Us</h4>
-                    <p>+1 (253) 545-7483</p>
+                    <p>512-270-6926</p>
                   </div>
                 </div>
 
@@ -121,8 +121,7 @@ const Contact = () => {
               <div class="form-container">
                 <h3>Send Us a Message</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit mauris
-                  hendrerit faucibus imperdiet nec eget felis.
+                  
                 </p>
 
                 <form

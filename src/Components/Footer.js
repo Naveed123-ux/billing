@@ -29,7 +29,7 @@ const Footer = () => {
               <p>5900 Balcones Drive # 5164</p>
               <p>Austin, TX 78731</p>
               <p className="mt-3">
-                <strong>Phone:</strong> <span>+1 (253) 545-7483</span>
+                <strong>Phone:</strong> <span>512-270-6926</span>
               </p>
               <p>
                 <strong>Email:</strong> <span>info@billingvista.com</span>
@@ -51,8 +51,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+          <div className=" col-lg-3 footer-links">
+            <h4>Discover us</h4>
             <ul>
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -60,36 +60,50 @@ const Footer = () => {
               <li>
                 <NavLink to="/about">About us</NavLink>
               </li>
+              
               <li>
-                <NavLink to="/services">Services</NavLink>
-              </li>
-              <li>
-                <NavLink to="/terms">Terms of service</NavLink>
-              </li>
-              <li>
-                <NavLink to="/privacy">Privacy policy</NavLink>
-              </li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+               <li>
+                  <NavLink to="/outsource">
+                   Why OutSource
+                  </NavLink>
+                </li>
             </ul>
           </div>
 
-          <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+          <div className=" col-lg-3 footer-links">
+            <h4>Solutions</h4>
             <ul>
-              <li>
-                <NavLink to="/services-details">Web Design</NavLink>
-              </li>
-              <li>
-                <NavLink to="/services-details">Web Development</NavLink>
-              </li>
-              <li>
-                <NavLink to="/services-details">Product Management</NavLink>
-              </li>
-              <li>
-                <NavLink to="/services-details">Marketing</NavLink>
-              </li>
-              <li>
-                <NavLink to="/services-details">Graphic Design</NavLink>
-              </li>
+             <li>
+                  <NavLink to="/medical-billing">
+                    Medical Billing and Coding
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/denial">AR & Denial Management</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/medical-credentialing">
+                    Physician Credentialing Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/revenue-cycle-management">
+                    Revenue Cycle
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact-center">
+                    Contact Center and Patient Scheduling Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/ehr">Electronic Health Records</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/front-desk">FrontDesk Assist</NavLink>
+                </li>
             </ul>
           </div>
 

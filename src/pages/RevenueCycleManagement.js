@@ -652,7 +652,7 @@ const RevenueCycleManagement = () => {
                     ></i>
                     <strong>Phone:</strong>{" "}
                     <a href="tel:+12535457483" className="text-decoration-none">
-                      +1 (253) 545-7483
+                      512-270-6926
                     </a>
                   </div>
                   <div className="mb-3">

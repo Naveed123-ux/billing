@@ -131,7 +131,7 @@ const BookDemo = () => {
                   </div>
                   <div className="card-content">
                     <h4>Call Us</h4>
-                    <p>+1 (253) 545-7483</p>
+                    <p>512-270-6926</p>
                   </div>
                 </div>
 

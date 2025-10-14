@@ -142,7 +142,7 @@ const Home = () => {
                           <i class="bi bi-telephone-fill"></i>
                           <div class="badge-content">
                             <span>Contact</span>
-                            <strong>+1 (253) 545-7483</strong>
+                            <strong>512-270-6926</strong>
                           </div>
                         </div>
                         <div class="badge-item">
@@ -234,7 +234,7 @@ const Home = () => {
                   class="img-fluid rounded-3 mb-4"
                 />
                 <div class="experience-badge">
-                  <span class="years">6+</span>
+                  <span class="years">8+</span>
                   <span class="text">Years of Excellence</span>
                 </div>
               </div>
@@ -370,12 +370,12 @@ const Home = () => {
                 </div> */}
 
                 <div class="cta-wrapper mt-4">
-                  <a href="about.html" class="btn btn-primary">
-                    Learn More About Us
+                    <NavLink to="/contact" class="btn btn-primary">
+                  <a  class="btn btn-primary">
+                   Let's Connect
                   </a>
-                  <a href="#" class="btn btn-outline">
-                    Meet Our Team
-                  </a>
+                  </NavLink>
+                 
                 </div>
               </div>
             </div>
@@ -1295,7 +1295,7 @@ const Home = () => {
               <div class="col-lg-4 text-end">
                 <a href="tel:911" class="emergency-btn">
                   <i class="bi bi-telephone-fill"></i>
-                  Call (253) 545-7483
+                  Call   512-270-6926
                 </a>
               </div>
             </div>
